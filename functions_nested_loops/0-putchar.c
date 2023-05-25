@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include "main.h"
-/*
-  * The `main()` function is the entry point to the program.
-  * description: print putchar no use of inbuilt functions
-  * Return: Always 0
-  */
+/**
+* main - entry point.
+* description: print putchar no use of inbuilt functions
+* Return: Always 0
+*/
 
+/* betty style doc for function main goes there */
 int main(void)
 
 {
