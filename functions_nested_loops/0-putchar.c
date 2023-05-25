@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /*
   * The `main()` function is the entry point to the program.
