@@ -5,7 +5,8 @@
 /**
  * main - Entry point
  *
- * Description: 'should print a random number, and after passing through the if loop, tells whether it's positive or negative'
+ * Description: 'should print a random number,
+ * and tell it's positive or negative'
  *
  * Return: Always 0 (Success)
  */
