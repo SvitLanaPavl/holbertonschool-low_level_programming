@@ -17,4 +17,5 @@ for (c = 97; c < 123; c++)
 {
 	return (1);
 }
+return (0);
 }
