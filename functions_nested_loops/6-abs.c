@@ -3,16 +3,16 @@
 
 /**
  * _abs - Computes the absolute value of an integer.
- * @int: the number argument
+ * @n: the number argument
  * Description: computes the absolute value of an integer.
  * Return: Always 0
  */
-int _abs(int n)
+int _abs(n)
 {
 	if (n < 0)
 	{
 	n = (-1) * n;
 	}
-	putchar(n);
+	_putchar(n);
 	return (0);
 }
