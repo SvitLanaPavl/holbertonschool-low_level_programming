@@ -9,19 +9,9 @@
  */
 int _islower(int c)
 {
-for (c = 65; c < 123; c++)
-{
-	if (c > 64 && c < 91)
-	{
-		return (0);
-	}
 	if (c > 97 && c < 123)
 	{
 		return (1);
-	}
-	else
-	{
-		continue;
 	}
 }
 return (0);
