@@ -30,5 +30,4 @@ void jack_bauer(void)
 			_putchar(minute + '0');
 		}
 	}
-return (0);
 }
