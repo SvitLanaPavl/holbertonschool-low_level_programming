@@ -19,9 +19,6 @@ void jack_bauer(void)
 	{
 		if ((hour1 <= 1 && hour2 <= 9) || (hour1 <= 2 && hour2 <= 3))
 		{
-		_putchar('0' + hour1);
-		_putchar('0' + hour2);
-		_putchar(':');
 
 		for (minute1 = 0; minute1 <= 5; minute1++)
 		{
