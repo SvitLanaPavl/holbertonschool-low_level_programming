@@ -22,6 +22,8 @@ void times_table(void)
 		{
 			_putchar(c + '0');
 			_putchar(44);
+			_putchar(32);
+			_putchar(32);
 		}
 
 		if (c <= 9 && c > 0 && b < 9)
