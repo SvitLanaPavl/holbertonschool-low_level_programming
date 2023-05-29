@@ -12,12 +12,15 @@ void print_to_98(int n)
 {
 int i;
 
-for (i = n; n <= 98; n++)
+printf("Enter value of n: ");
+scanf("%d", &n);
+
+while (n <= 98)
 {
-	_putchar(n + '0');
-	_putchar(44);
-	_putchar(32);
+
+	printf("%d, ", n);
+	n++;
 }
-return (n);
+return (0);
 }
 
