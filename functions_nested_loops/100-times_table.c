@@ -22,20 +22,30 @@ void print_times_table(int n)
 			if (c > 9)
 			{
 				_putchar(44);
+				_putchar(44);
 				_putchar(32);
 				_putchar(c / 10 + '0');
 				_putchar(c % 10 + '0');
 			}
 
-			else
+			else if
 			{
 				if (b != 0)
 				{
+					_putchar(44);
 					_putchar(44);
 					_putchar(32);
 					_putchar(32);
 				}
 				_putchar(c + '0');
+			}
+
+			else
+			{
+				_putchar(44);
+				_putchar(c / 10 + '0');
+				_putchar(c / 10 + '0');
+				_putchar(c % 10 + '0');
 			}
 
 			if (n > 15 || n < 0)
