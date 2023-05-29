@@ -10,7 +10,8 @@
 
 void print_times_table(int n)
 {
-	int a, b;
+	static int a;
+	int b;
 
 	scanf("%d", &n);
 
