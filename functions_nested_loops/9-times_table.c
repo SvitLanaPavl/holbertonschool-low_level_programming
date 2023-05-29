@@ -18,32 +18,23 @@ void times_table(void)
 		{
 		int c = b * a;
 
-		if (c <= 9 && b != 0)
+		if (c > 9)
 		{
-		_putchar(32);
-		_putchar(32);
-		_putchar(c + '0');
 		_putchar(44);
+		_putchar(32);
+		_putchar(c /10  + '0');
+		_putchar(c % 10 + '0');
 		}
-		if (b == 9)
+		else
 		{
-			if (c <= 9)
+			if (b != 0)
 			{
-			_putchar(32);
-			_putchar(32);
-			_putchar(c + '0');
-			}
-			_putchar(32);
-			_putchar(c / 10 + '0');
-			_putchar(c % 10 + '0');
-		}
-		if (c > 9 && b != 0)
-		{
-			_putchar(32);
-			_putchar(c / 10 + '0');
-			_putchar(c % 10 + '0');
 			_putchar(44);
-		};
+			_putchar(32);
+			_putchar(32);
+			}
+			_putchar(c + '0');
+		}
 		}
 	_putchar('\n');
 	}
