@@ -18,6 +18,6 @@ for (i = n; n <= 98; n++)
 	_putchar(44);
 	_putchar(32);
 }
-return (0);
+return (n);
 }
 
