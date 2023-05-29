@@ -42,9 +42,15 @@ void print_times_table(int n)
 
 			if (c > 99)
 			{
+				int d = c % 10;
+				int f = c / 10;
+				int g = f % 10;
+				int h = g / 10;
+
 				_putchar(32);
-				_putchar(c / 100 + '0');
-				_putchar(c % 10 + '0');
+				_putchar(h + '0');
+				_putchar(g + '0');
+				_putchar(d + '0');
 			}
 
 			if (n > 15 || n < 0)
