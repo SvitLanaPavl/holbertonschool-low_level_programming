@@ -13,19 +13,6 @@ int add(int a, int b)
 {
 	int c = a + b;
 
-		if (c > 9)
-		{
-		int d = _putchar(c / 10 + '0');
-		int e = _putchar(c % 10);
-		char g = ((d + e) + 0);
-
-		return (g);
-		}
-		else
-		{
-		int f = _putchar(c + '0');
-
-		return (f);
-		}
+	return (c);
 }
 
