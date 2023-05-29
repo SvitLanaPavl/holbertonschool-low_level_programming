@@ -18,7 +18,8 @@ int add(int a, int b)
 		int d = _putchar(c / 10 + '0');
 		int e = _putchar(c % 10);
 
-		return (d e);
+		return d;
+		return e;
 		}
 		else
 		{
