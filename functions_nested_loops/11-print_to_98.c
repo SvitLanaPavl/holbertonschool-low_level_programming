@@ -10,7 +10,6 @@
 
 void print_to_98(int n)
 {
-int n;
 
 printf("Enter value of n: ");
 scanf("%d", &n);
