@@ -10,7 +10,7 @@
 
 void print_to_98(int n)
 {
-int i;
+int n;
 
 printf("Enter value of n: ");
 scanf("%d", &n);
@@ -21,6 +21,5 @@ while (n <= 98)
 	printf("%d, ", n);
 	n++;
 }
-return (0);
 }
 
