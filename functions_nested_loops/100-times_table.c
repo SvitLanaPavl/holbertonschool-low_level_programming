@@ -17,7 +17,7 @@ void print_times_table(int n)
 
 	for (b = 0; b <= 14; b++)
 	{
-		printf("%dx%d = %d, ", a, b, b * a);
+		printf("%d, ", b * a);
 
 	printf("\n");
 	if (n > 15 || n < 0)
