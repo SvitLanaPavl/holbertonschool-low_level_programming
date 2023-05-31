@@ -24,8 +24,11 @@ printf("Fizz ");
 }
 else if (incr % 5 == 0)
 {
+if (incr != 100)
+{
 printf("Buzz ");
-if (incr == 100)
+}
+else
 {
 printf("Buzz");
 }
