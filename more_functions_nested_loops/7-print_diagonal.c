@@ -23,7 +23,7 @@ void print_diagonal(int n)
 			}
 			else
 			{
-			for (space = 0; space < count; space++)
+			for (space = 1; space < count; space++)
 				{
 				_putchar(32);
 				}
