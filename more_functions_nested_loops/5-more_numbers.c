@@ -17,14 +17,14 @@ for (count = 1; count <= 10; count++)
 {
 	for (number = 0; number <= 14; number++)
 	{
-		if (number >= 10)
+		if (number > 9)
 		{
 		_putchar(number / 10 + '0');
 		_putchar(number % 10 + '0');
 		}
 
 	}
-}
 	_putchar('\n');
+}
 }
 
