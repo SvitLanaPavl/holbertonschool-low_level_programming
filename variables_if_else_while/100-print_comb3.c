@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - Entry point
@@ -13,24 +14,24 @@
 /* betty style doc for function main goes there */
 
 int main(void)
-{
-	int digit1, digit2;
+	{
+	char digit1, digit2;
 
-	digit1 = 48;
-while (digit1 < 58)
-{
-	digit2 = 48;
-
-	while (digit2 < 58)
+	for (digit1 = '0'; digit1 <= 9; digit1++)
+	{
+	for (digit2 = digit1 + '1'; digit2 <= 9; digit2++)
 	{
 	putchar(digit1);
 	putchar(digit2);
-	digit2++;
 	putchar(44);
 	putchar(32);
 	}
-digit1++;
-}
+
+	if (digit1 != '9' && digit2 != '8')
+	{
+		continue;
+	}
+	}
 putchar(*"\n");
 return (0);
 }
