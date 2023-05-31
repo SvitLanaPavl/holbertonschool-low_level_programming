@@ -17,10 +17,10 @@ void print_square(int size)
 	{
 		int countH, countV;
 
-		for (countH = 1; countH <= size; countH++)
+		for (countH = 1; countH < size; countH++)
 		{
-			_putchar(35);;
-		for (countV = 1; countV <= size; countV++)
+			_putchar(35);
+		for (countV = 1; countV < size; countV++)
 		{
 			_putchar(35);
 		}
