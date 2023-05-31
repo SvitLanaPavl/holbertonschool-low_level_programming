@@ -23,10 +23,10 @@ void print_triangle(int size)
 		for (countSp = 1; countSp < size; countSp++)
 		{
 		_putchar(32);
-		}
 		for (countH = 1; countH < size - 1; countH++)
 		{
 		_putchar(35);
+		}
 		}
 		_putchar('\n');
 		}
