@@ -23,8 +23,8 @@ void print_square(int size)
 		for (countV = 1; countV <= size; countV++)
 		{
 			_putchar(35);
-			_putchar('\n');
 		}
+		_putchar('\n');
 		}
 	}
 }
