@@ -19,7 +19,7 @@ int main(void)
 	{
 		for (digit3 = 0; digit3 <= 9; digit3++)
 		{
-			for (digit4 = digit2 + 1; digit4 <= 9; digit4++)
+			for (digit4 = digit2 + 1; digit4 <= 8; digit4++)
 			{
 				putchar(digit1 + '0');
 				putchar(digit2 + '0');
