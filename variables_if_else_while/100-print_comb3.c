@@ -25,11 +25,11 @@ int main(void)
 	putchar(digit2 + '0');
 	putchar(44);
 	putchar(32);
-	}
 
 	if (digit1 != 9 && digit2 != 8)
 	{
 		continue;
+	}
 	}
 	}
 putchar(*"\n");
