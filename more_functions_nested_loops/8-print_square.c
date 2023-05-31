@@ -20,7 +20,7 @@ void print_square(int size)
 		for (countH = 1; countH < size; countH++)
 		{
 			_putchar(35);
-		for (countV = 1; countV < size; countV++)
+		for (countV = 1; countV <= size; countV++)
 		{
 			_putchar(35);
 		}
