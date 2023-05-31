@@ -18,7 +18,6 @@ for (count = 1; count <= 10; count++)
 	for (number = 1; number <= 14; number++)
 	{
 		_putchar(number + '0');
-		}
 	}
 }
 	_putchar('\n');
