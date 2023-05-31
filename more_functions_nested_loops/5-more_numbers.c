@@ -20,8 +20,8 @@ for (count = 1; count <= 10; count++)
 		if (number > 9)
 		{
 		_putchar(number / 10 + '0');
-		_putchar(number % 10 + '0');
 		}
+		_putchar(number % 10 + '0');
 
 	}
 	_putchar('\n');
