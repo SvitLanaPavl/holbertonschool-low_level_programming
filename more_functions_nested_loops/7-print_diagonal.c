@@ -18,16 +18,19 @@ void print_diagonal(int n)
 		{
 			if (count == 1)
 			{
+				_putchar(92);
+				_putchar('\n');
 			if (count > 0)
 			{
 				for (space = 0; space < count; space++)
 				{
 					_putchar(32);
 				}
-			}
 		_putchar(92);
 		_putchar('\n');
 		}
+	}
+			count = count - 1;
 	}
 	}
 	_putchar('\n');
