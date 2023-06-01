@@ -15,17 +15,16 @@ int value = 0;
 int count;
 
 for (count = 0; s[count] != '\0'; count++)
+if (s[count] == '-')
 {
-if ((s[count] >= '0' && s[count] <= '9') | (s[count] == '+' || s[count] == '-'))
+sign = -1;
+}
+else if (s[count] == '+')
 {
-	if (s[count] == '-')
-	{
-		sign = -1;
-	}
-	else if (s[count] == '+')
-	{
-		sign = 1;
-	}
+sign = 1;
+}
+if (s[count] >= '0' && s[count] <= '9')
+{
 	value = value * 10 + s[count] - '0';
 }
 else
