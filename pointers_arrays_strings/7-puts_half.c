@@ -14,7 +14,7 @@ int length = 0;
 
 while (str[length] != '\0')
 {
-length++
+length++;
 }
 if (length % 2 == 0)
 {
@@ -33,7 +33,7 @@ if (length % 2 == 1)
 
 	for (count_o = n; count_o < length; count_o++)
 	{
-	_putchar(str[count_o];
+	_putchar(str[count_o]);
 	}
 }
 }
