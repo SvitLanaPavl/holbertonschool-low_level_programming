@@ -11,17 +11,8 @@
 
 void print_rev(char *s)
 {
-	void my_strlen(s)
-	{
-	size_t length = 0;
-
-	while (s != 0)
-	{
-		length++;
-		s++;
-	}
-	}
-	size_t len = my_strlen(*s);
+	char str_rev[] = strrev(*s);
+	size_t len = str_rev;
 	int count;
 
 	for (count = len - 1; count <= 0; count--)
