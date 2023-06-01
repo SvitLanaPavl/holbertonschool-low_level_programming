@@ -24,7 +24,7 @@ else if (s[count] == '+')
 {
 sign = 1;
 }
-else if ((s[count] >= '0' && s[count] <= '9') && (sign[count] == -1 || sign[count] == 1))
+else if ((s[count] >= '0' && s[count] <= '9') && (s[count] == '-' || s[count] == '-'))
 {
 	value = value * 10 + s[count] - '0';
 }
