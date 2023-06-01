@@ -7,9 +7,9 @@
  * @s: the string argument
  * Return: void
  */
+
 void print_rev(char *s)
 {
-	
 	int length = strlen(s);
 	int count;
 
