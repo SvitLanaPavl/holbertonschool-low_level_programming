@@ -23,7 +23,7 @@ sign = -1;
 }
 else if (s[count] >= '0' && s[count] <= '9')
 {
-	value = balue * 10 + s[count] - '0';
+	value = value * 10 + s[count] - '0';
 }
 else
 {
