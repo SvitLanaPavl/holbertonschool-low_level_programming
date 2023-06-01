@@ -20,7 +20,7 @@ void rev_string(char *s)
 	}
 	for (a = 0, z = length - 1; a < z; a++, z--)
 	{
-	int temporary = s[a];
+	int temporary;
 
 	s[a] = s[z];
 	s[z] = temporary;
