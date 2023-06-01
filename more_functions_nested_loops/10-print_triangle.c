@@ -18,15 +18,15 @@ void print_triangle(int size)
 	{
 		int count, countSp, countH;
 
-		for (count = 1; count <= size; count++)
+		for (count = 0; count < size; count++)
 		{
-		for (countSp = 1; countSp < size; countSp++)
+		for (countSp = 0; countSp < size - count - 1; countSp++)
 		{
 		_putchar(32);
-		for (countH = 1; countH < size - 1; countH++)
+		}
+		for (countH = 0; countH <= count; countH++)
 		{
 		_putchar(35);
-		}
 		}
 		_putchar('\n');
 		}
