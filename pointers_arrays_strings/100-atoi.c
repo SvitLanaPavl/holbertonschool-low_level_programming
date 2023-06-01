@@ -34,6 +34,6 @@ for (count = 0; s[count] != '\0'; count++)
 	{
 	return (0);
 	}
-return (value * sign)
+return (value * sign);
 }
 }
