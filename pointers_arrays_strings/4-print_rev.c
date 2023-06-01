@@ -11,14 +11,14 @@
 
 void print_rev(char *s)
 {
-	void my_strlen(*s)
+	void my_strlen(s)
 	{
 	size_t length = 0;
 
-	while (*s != 0)
+	while (s != 0)
 	{
 		length++;
-		str++;
+		s++;
 	}
 	}
 	size_t len = my_strlen(*s);
