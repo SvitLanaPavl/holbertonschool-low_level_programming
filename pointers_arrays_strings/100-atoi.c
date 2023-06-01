@@ -20,21 +20,18 @@ if (s[count] == '-')
 {
 sign = -1;
 }
+else if (s[count] == '+')
+{
+sign = 1;
+}
 else if (s[count] >= '0' && s[count] <= '9')
 {
 	value = value * 10 + s[count] - '0';
 }
 else
 {
-break;
+return (0);
 }
 }
-if (s[count] == '\0')
-{
 return (value * sign);
-}
-else
-{
-	return (0);
-}
 }
