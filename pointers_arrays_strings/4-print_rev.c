@@ -9,6 +9,7 @@
  */
 void print_rev(char *s);
 {
+	
 	int length = strlen(s);
 	int count;
 
