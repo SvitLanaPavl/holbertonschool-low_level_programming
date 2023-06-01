@@ -4,7 +4,6 @@
 /**
  * _atoi - Converts a string to an integer
  * Description: Convert a string to an integer
- * considering +'s and -'es
  * @s: string argument
  * Return: number if the string has numbers,
  * otherwise 0
@@ -27,8 +26,15 @@ else if (s[count] >= '0' && s[count] <= '9')
 }
 else
 {
+break;
+}
+}
+if (s[count] == '\0')
+{
+return (value * sign);
+}
+else
+{
 	return (0);
 }
-}
-return (value * sign);
 }
