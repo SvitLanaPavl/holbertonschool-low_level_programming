@@ -11,10 +11,20 @@
 
 void print_rev(char *s)
 {
-	int length = strlen(s);
+	void my_strlen(*s)
+	{
+	size_t length = 0;
+
+	while (*s != 0)
+	{
+		length++;
+		str++;
+	}
+	}
+	size_t len = my_strlen(*s);
 	int count;
 
-	for (count = length - 1; count <= 0; count--)
+	for (count = len - 1; count <= 0; count--)
 	{
 	_putchar(s[count]);
 	}
