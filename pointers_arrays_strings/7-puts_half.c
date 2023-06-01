@@ -36,4 +36,5 @@ if (length % 2 == 1)
 	_putchar(str[count_o]);
 	}
 }
+_putchar('\n');
 }
