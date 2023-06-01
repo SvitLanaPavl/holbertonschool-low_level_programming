@@ -21,5 +21,5 @@ for (count = 0; count < n; count++)
 	}
 printf("%d", a[count]);
 }
-_putchar("\n");
+_putchar('\n');
 }
