@@ -15,25 +15,20 @@ int sign = 1;
 int value = 0;
 int count;
 
-if (s[0] == '-')
-{
-sign = -1;
-s++;
-}
-else if (s[0] == '+')
-{
-s++;
-}
 for (count = 0; s[count] != '\0'; count++)
 {
-	if (s[count] >= '0' && s[count] <= '9')
-	{
-	value = value * 10 + s[count] - '0';
-	}
-	else
-	{
-	return (0);
-	}
-return (value * sign);
+if (s[count] == '-')
+{
+sign = -1;
 }
+else if (s[count] >= '0' && s[count] <= '9')
+{
+	value = balue * 10 + s[count] - '0';
+}
+else
+{
+	return (0);
+}
+}
+return (value * sign);
 }
