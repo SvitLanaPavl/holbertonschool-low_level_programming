@@ -18,6 +18,12 @@ void rev_string(char *s)
 	{
 		length++;
 	}
+
+	if (length == 0)
+	{
+	return;
+	}
+
 	for (a = 0, z = length - 1; a < z; a++, z--)
 	{
 	int temporary = s[a];
