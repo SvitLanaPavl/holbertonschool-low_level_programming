@@ -31,7 +31,7 @@ if (length % 2 == 1)
 	int n = (length - 1) / 2;
 	int count_o;
 
-	for (count_o = n - 1; count_o < length; count_o++)
+	for (count_o = n + 1; count_o < length; count_o++)
 	{
 	_putchar(str[count_o]);
 	}
