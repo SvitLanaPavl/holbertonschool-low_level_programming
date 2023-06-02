@@ -20,7 +20,8 @@ void print_number(int n)
 	_putchar('0');
 	}
 
-	int temp = n;
+	int temp;
+	temp = n;
 
 	while (temp)
 	{
