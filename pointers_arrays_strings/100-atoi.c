@@ -19,20 +19,20 @@ for (i = 0; s[i] != '\0'; i++)
 if (s[i] == '-')
 {
 count++;
+
+if (count % 2 == 1)
+{
+	sign = -1;
+}
 }
 else if (s[i] >= '0' && s[i] <= '9')
 {
 	value = value * 10 + s[i] - '0';
 }
-}
-if (count % 2 == 1)
-{
-	sign = -1;
-}
-return (value * sign);
-
 else
 {
 	return (0);
+}
+return (value * sign);
 }
 }
