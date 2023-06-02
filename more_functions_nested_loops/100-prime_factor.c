@@ -19,6 +19,6 @@ int main()
 	{
 	max_prime_factor = number;
 	}
-	return (0);
+	return (max_prime_factor);
 }
 
