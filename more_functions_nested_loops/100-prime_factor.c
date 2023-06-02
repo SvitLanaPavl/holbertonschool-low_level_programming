@@ -1,6 +1,11 @@
 #include <stdio.h>
+/**
+ * main - Entry point
+ * Description: Prints the largest prime factor
+ * Return: 0 Success
+ */
 
-int main()
+int main(void)
 {
 	long int number = 612852475143;
 	long int max_prime_factor = 1;
@@ -19,6 +24,8 @@ int main()
 	{
 	max_prime_factor = number;
 	}
-	return (max_prime_factor);
+	printf("lld\n", max_prime_factor);
+
+	return (0);
 }
 
