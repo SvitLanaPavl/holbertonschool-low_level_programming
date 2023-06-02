@@ -23,6 +23,7 @@ sign *= -1;
 }
 while (s[i] >= '0' && s[i] <= '9')
 {
+flag = 1;
 value = value * 10 + s[i] - '0';
 i++;
 }
