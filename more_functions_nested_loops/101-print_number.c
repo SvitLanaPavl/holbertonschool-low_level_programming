@@ -9,6 +9,8 @@
  */
 void print_number(int n)
 {
+	int temp;
+
 	if (n < 0)
 	{
 	_putchar('-');
@@ -20,7 +22,6 @@ void print_number(int n)
 	_putchar('0');
 	}
 
-	int temp;
 	temp = n;
 
 	while (temp)
