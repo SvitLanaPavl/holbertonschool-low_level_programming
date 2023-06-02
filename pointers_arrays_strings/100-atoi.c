@@ -30,9 +30,5 @@ else
 }
 }
 
-if (i % 2 == 1)
-{
-	sign = -1;
-}
 return (value * sign);
 }
