@@ -12,22 +12,27 @@ int _atoi(char *s)
 {
 int sign = 1;
 int value = 0;
-int count;
+int count, i;
 
-for (count = 0; s[count] != '\0'; count++)
+for (i = 0; s[i] != '\0'; i++)
 {
-if (s[count] == '-')
+if (s[i] == '-')
 {
-sign = -1;
+count++;
 }
-else if (s[count] >= '0' && s[count] <= '9')
+else if (s[i] >= '0' && s[i] <= '9')
 {
-	value = value * 10 + s[count] - '0';
+	value = value * 10 + s[i] - '0';
 }
-else
+}
+if (count % 2 == 1)
 {
-return (0);
-}
+	sign = -1;
 }
 return (value * sign);
+
+else
+{
+	return (0);
+}
 }
