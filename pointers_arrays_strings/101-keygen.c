@@ -12,11 +12,11 @@ srand(time(NULL));
 
 for (i = 0; i < password_length; i++)
 {
-	print("%c", list[rand() % (sizeof list - 1)]);
+	printf("%c", list[rand() % (sizeof list - 1)]);
 }
 }
 
-main()
+int main()
 {
 	int password_length;
 
