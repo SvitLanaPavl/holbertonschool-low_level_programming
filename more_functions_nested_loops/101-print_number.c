@@ -30,4 +30,5 @@ void print_number(int n)
 	_putchar(digit + '0');
 	temp /= 10;
 	}
+	}
 }
