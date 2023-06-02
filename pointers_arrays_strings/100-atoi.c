@@ -18,13 +18,8 @@ for (i = 0; s[i] != '\0'; i++)
 {
 if (s[i] == '-')
 {
-sign = -1;
 i++;
 
-if (i % 2 == 0)
-{
-	sign = 1;
-}
 }
 else if (s[i] >= '0' && s[i] <= '9')
 {
@@ -34,6 +29,11 @@ else
 {
 	return (0);
 }
+}
+
+if (i % 2 == 1)
+{
+	sign = -1;
 }
 return (value * sign);
 }
