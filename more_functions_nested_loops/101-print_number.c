@@ -20,9 +20,14 @@ void print_number(int n)
 	_putchar('0');
 	}
 
-	while (n > 0)
+	else if (n > 0)
 	{
-	_putchar('0' + n % 10);
-	n /= 10;
+	int temp = n;
+
+	while (temp)
+	{
+	int digit = temp % 10;
+	_putchar(digit + '0');
+	temp /= 10;
 	}
 }
