@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <time.h>
 
-int password(int password_length)
+void password(int password_length)
 {
 int i;
 
-char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_+-=QWERTYUIOPASDFGHJKLZXCVBNM[]{};':\"<>,.?/\|";
+char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_+-=QWERTYUIOPASDFGHJKLZXCVBNM[]{};':\"<>,.?/\\|";
 
 srand(time(NULL));
 
