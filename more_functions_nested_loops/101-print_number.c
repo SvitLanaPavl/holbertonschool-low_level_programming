@@ -13,7 +13,6 @@ void print_number(int n)
 	{
 	_putchar('-');
 	_putchar(n + '0');
-	n = -n;
 	}
 	else if (n == 0)
 	{
@@ -23,5 +22,6 @@ void print_number(int n)
 	while (n > 0)
 	{
 	_putchar(n % 10 + '0');
+	number /= 10;
 	}
 }
