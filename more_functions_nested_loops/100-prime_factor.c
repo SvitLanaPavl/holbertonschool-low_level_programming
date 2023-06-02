@@ -2,9 +2,9 @@
 
 int main()
 {
-	long long int number = 612852475143;
-	long long int max_prime_factor = 1;
-	long long int i;
+	long int number = 612852475143;
+	long int max_prime_factor = 1;
+	long int i;
 
 	for (i = 2; i * i <= number; i++)
 	{
