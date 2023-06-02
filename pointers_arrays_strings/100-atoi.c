@@ -12,15 +12,15 @@ int _atoi(char *s)
 {
 int sign = 1;
 int value = 0;
-int count, i;
+int i;
 
 for (i = 0; s[i] != '\0'; i++)
 {
 if (s[i] == '-')
 {
-count++;
+i++;
 
-if (count % 2 == 1)
+if (i % 2 == 1)
 {
 	sign = -1;
 }
@@ -33,6 +33,6 @@ else
 {
 	return (0);
 }
-return (value * sign);
 }
+return (value * sign);
 }
