@@ -24,7 +24,7 @@ int main(void)
 	{
 	max_prime_factor = number;
 	}
-	printf("lld", max_prime_factor);
+	printf("ld", max_prime_factor);
 
 	return (0);
 }
