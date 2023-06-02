@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_numbers - Prints an integer.
+ * print_number - Prints an integer.
  * Description: prints an integer.
  * @n: number argument
  * Return: void
