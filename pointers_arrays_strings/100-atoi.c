@@ -19,10 +19,6 @@ for (count = 0; s[count] != '\0'; count++)
 if (s[count] == '-')
 {
 sign = -1;
-if (s[count % 2 == 0] == 0)
-{
-sign = 1
-}
 }
 else if (s[count] >= '0' && s[count] <= '9')
 {
