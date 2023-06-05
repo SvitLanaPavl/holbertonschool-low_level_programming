@@ -36,5 +36,4 @@ void print_number(int n)
 	_putchar(52), _putchar(56), _putchar(51), _putchar(54), _putchar(52);
 	_putchar(56);
 	}
-	}
 }
