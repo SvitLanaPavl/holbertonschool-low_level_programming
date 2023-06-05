@@ -11,13 +11,14 @@ void print_number(int n)
 {
 	int digit = 0;
 	int flag = 0;
+	int i;
 
 	if (n == 0)
 	{
 	_putchar('0');
 	}
 
-	if ((n > 0 && n <= 2147483647) || (n < 0 && n >= -2147483648))
+	if ((n > 0 && n <= 2147483647) || (n < 0 && n >= -2147483647))
 	{
 	if (n < 0)
 	{
