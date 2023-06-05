@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 
-void generate_password(char password, int password_length)
+void generate_password(char *password, int password_length)
 {
 int i;
 
