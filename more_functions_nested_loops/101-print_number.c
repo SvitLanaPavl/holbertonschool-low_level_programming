@@ -24,9 +24,8 @@ void print_number(int n)
 
 	while (n > 0)
 	{
-	digit = n % 10;
-
-	_putchar(digit + '0');
 	n /= 10;
+	digit = n % 10;
+	_putchar(digit + '0');
 	}
 }
