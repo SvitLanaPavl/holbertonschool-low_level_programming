@@ -24,7 +24,7 @@ void print_number(int n)
 	{
 	n = -n, _putchar('-');
 	}
-	for (i = 1000000000; i > 0; i / 10)
+	for (i = 1000000000; i > 0; i = i / 10)
 	{
 	digit = n / i;
 	if (digit != 0)
