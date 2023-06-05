@@ -9,7 +9,7 @@
  */
 void print_number(int n)
 {
-	int temp;
+	int digit;
 
 	if (n < 0)
 	{
@@ -22,13 +22,11 @@ void print_number(int n)
 	_putchar('0');
 	}
 
-	temp = n;
-
-	while (temp < 0)
+	while (n > 0)
 	{
-	int digit = temp % 10;
+	digit = n % 10;
 
 	_putchar(digit + '0');
-	temp /= 10;
+	n /= 10;
 	}
 }
