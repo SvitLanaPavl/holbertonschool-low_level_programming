@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 
-void password(int password_length)
+void generate_password(char password, int password_length)
 {
 int i;
 
@@ -12,7 +12,7 @@ srand(time(NULL));
 
 for (i = 0; i < password_length; i++)
 {
-	printf("%c", list[rand() % (sizeof list - 1)]);
+	password[i] = list[rand() % (sizeof list - 1)];
 }
 }
 
@@ -22,6 +22,11 @@ int main()
 
 	printf("Enter length of the password\n");
 	scanf("%d", &password_length);
-	password(password_length);
+
+	char password[password_length];
+
+	generate_password(password, password_length);
+	printf("The generated password is: %s\n", password);
+
 	return (0);
 }
