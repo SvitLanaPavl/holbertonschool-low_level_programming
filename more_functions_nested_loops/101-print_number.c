@@ -29,7 +29,8 @@ void print_number(int n)
 	if (digit != 0 || flag == 1)
 	_putchar (digit + '0'), n = n - (n / i) * i;
 	}
-	if (n < -2147483647)
+	}
+	else if (n < -2147483647)
 	{
 	_putchar(45), _putchar(50), _putchar(49), _putchar(52), _putchar(55);
 	_putchar(52), _putchar(56), _putchar(51), _putchar(54), _putchar(52);
