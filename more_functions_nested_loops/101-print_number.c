@@ -31,9 +31,9 @@ void print_number(int n)
 	}
 	if (n < -2147483647)
 	{
-	_putchar('-'), _putchar('2'), _putchar('1'), _putchar('4'), _putchar('7');
-	_putchar('4'), _putchar('8'), _putchar('3'), _putchar('6'), _putchar('4');
-	_putchar('8');
+	_putchar(45), _putchar(50), _putchar(49), _putchar(52), _putchar(55);
+	_putchar(52), _putchar(56), _putchar(51), _putchar(54), _putchar(52);
+	_putchar(56);
 	}
 	}
 }
