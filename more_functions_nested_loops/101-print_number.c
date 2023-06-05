@@ -32,7 +32,7 @@ void print_number(int n)
 	flag = 1;
 	}
 
-	if (digit != 0 || flag != 1)
+	if (digit != 0 || flag == 1)
 	{
 	_putchar (digit + '0');
 	n = n - (n / i) * i;
