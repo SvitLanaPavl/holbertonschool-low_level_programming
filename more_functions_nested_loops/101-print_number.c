@@ -14,42 +14,25 @@ void print_number(int n)
 	int i;
 
 	if (n == 0)
-	{
 	_putchar('0');
-	}
 
 	if ((n > 0 && n <= 2147483647) || (n < 0 && n >= -2147483647))
 	{
 	if (n < 0)
-	{
 	n = -n, _putchar('-');
-	}
 	for (i = 1000000000; i > 0; i = i / 10)
 	{
 	digit = n / i;
 	if (digit != 0)
-	{
 	flag = 1;
-	}
 
 	if (digit != 0 || flag == 1)
-	{
-	_putchar (digit + '0');
-	n = n - (n / i) * i;
+	_putchar (digit + '0'), n = n - (n / i) * i;
 	}
-	}
-	if ( n < -2147483647)
+	if (n < -2147483647)
 	{
-		_putchar('-');
-		_putchar('2');
-		_putchar('1');
-		_putchar('4');
-		_putchar('7');
-		_putchar('4');
-		_putchar('8');
-		_putchar('3');
-		_putchar('6');
-		_putchar('4');
+		_putchar('-'), _putchar('2'), _putchar('1'), _putchar('4'), _putchar('7');
+	       	_putchar('4'), _putchar('8'), _putchar('3'), _putchar('6'), _putchar('4');
 		_putchar('8');
 	}
 	}
