@@ -30,9 +30,9 @@ void print_number(int n)
 	digit = digit * 10 + n;;
 	_putchar(digit + '0');
 	n /= 10;
-	}
 	if (flag == 1)
 	{
 		break;
+	}
 	}
 }
