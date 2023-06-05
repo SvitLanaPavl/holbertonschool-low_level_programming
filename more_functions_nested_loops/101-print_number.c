@@ -12,25 +12,30 @@ void print_number(int n)
 	int digit = 0;
 	int flag = 0;
 
-	if (n < 0)
-	{
-	_putchar('-');
-	flag = 1;
-	_putchar(n + '0');
-	}
-	else if (n == 0)
+	if (n == 0)
 	{
 	_putchar('0');
 	}
 
-	while (n > 0)
+	if ((n > 0 && n <= 2147483647) || (n < 0 && n >= -2147483648))
 	{
-	digit = n % 10;
-	_putchar(digit + '0');
-	n /= 10;
-	if (flag == 1)
+	if (n < 0)
 	{
-		break;
+	n = -n, _putchar('-');
+	}
+	for (i = 1000000000; i > 0; i / 10)
+	{
+	digit = n / i;
+	if (digit != 0)
+	{
+	flag = 1;
+	}
+
+	if (digit != 0 || flag != 1)
+	{
+	_putchar (digit + '0');
+	n = n - (n / i) * i;
+	}
 	}
 	}
 }
