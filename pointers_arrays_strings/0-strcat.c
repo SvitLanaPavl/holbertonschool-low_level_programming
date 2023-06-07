@@ -13,11 +13,10 @@ char *_strcat(char *dest, char *src)
 	int index_s, index_d;
 
 	for (index_d = 0; dest[index_d] != '\0'; index_d++)
-	{
+	;
 	for (index_s = 0; src[index_s] != '\0'; index_s++)
 	{
 	dest[index_d + index_s] = src[index_s];
-	}
 	}
 	return (dest);
 }
