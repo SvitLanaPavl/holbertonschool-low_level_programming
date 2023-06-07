@@ -4,14 +4,14 @@
  * Description: changes all lowercase letters of a string to uppercase
  * Return: uppercase characters
  */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 	int i;
 
-	for (i = 0; char * != '\0'; i++)
+	for (i = 0; str != '\0'; i++)
 	{
-		if(char * >= 'a' && char * <= 'z')
-			char * -= 32;
+		if(str[i] >= 'a' && str[i] <= 'z')
+			str[i] -= 32;
 	}
 	return (str);
 }
