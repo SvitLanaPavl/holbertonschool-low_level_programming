@@ -5,7 +5,7 @@
  * @str: string argument
  * Return: capitalized string
  */
-char *cap_string (char *str)
+char *cap_string(char *str)
 {
 	int i;
 
@@ -19,7 +19,7 @@ char *cap_string (char *str)
 				continue;
 			}
 		}
-		if (str[i] == ' ')
+		if (str[i] == ' ' || str[i] == '.' || str[i] == '\n' || str[i] == '\t')
 		{
 			i++;
 			if (str[i] >= 'a' && str[i] <= 'z')
