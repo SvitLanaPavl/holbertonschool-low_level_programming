@@ -23,6 +23,7 @@ for (i = 0; i < row; i++)
 		prin += a[i][j];
 
 		if ((i + j) == (col - 1))
-		secon += a[i][j]
+		secon += a[i][j];
 	}
+}
 }
