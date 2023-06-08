@@ -17,7 +17,7 @@ for (i = 0; array[i] != '\0'; i++)
 	for (x = 0; leet_table[x] < 10; x++)
 	{
 	if (str[i] == array[x])
-		str[i] = array[x];
+		str[i] = leet_table[x];
 	}
 }
 return (str);
