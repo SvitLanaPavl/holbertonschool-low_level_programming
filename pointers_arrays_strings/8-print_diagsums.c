@@ -19,6 +19,5 @@ for (i = 0; i < size; i++)
 	prin += a[i * size + i];
 	secon += a[i * size + (size - 1 - i)];
 }
-printf("%d\n", prin);
-printf("%d\n", secon);
+printf("%d, %d\n", prin, secon);
 }
