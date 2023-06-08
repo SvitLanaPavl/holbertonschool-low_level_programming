@@ -7,14 +7,14 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	int i, j, a = 219, b = 255;
+	int i, j, c = 219, b = 255;
 
 	for (i = 1; i <= 8; i++)
 	{
 		for (j = 1; j <= a; j++)
 		{
 			if ((i+j) % 2 == 0)
-			_putchar(a + '0'), _putchar(a + '0');
+			_putchar(c + '0'), _putchar(c + '0');
 			
 			else
 			_putchar(b + '0'), _putchar(b +'0');
