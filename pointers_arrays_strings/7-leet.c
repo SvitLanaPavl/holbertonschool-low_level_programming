@@ -10,12 +10,15 @@ char *leet(char *str)
 {
 	char array[] = "aAeEoOtTlL";
 	char leet_table[] = "4433007711";
-	int i;
+	int i, x;
 
 for (i = 0; str[i] != '\0'; i++)
 {
-	if (str[i] == array[i])
-		str[i] = leet_table[i];
+	for (x = 0; x < 10; x++)
+	{
+	if (str[i] == array[x])
+		str[i] = leet_table[x];
+	}
 }
 return (str);
 }
