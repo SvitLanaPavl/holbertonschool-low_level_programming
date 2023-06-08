@@ -11,7 +11,7 @@ void print_chessboard(char (*a)[8])
 
 	for (i = 1; i <= 8; i++)
 	{
-		for (j = 1; j <= a; j++)
+		for (j = 1; j <= 8; j++)
 		{
 			if ((i+j) % 2 == 0)
 			_putchar(c + '0'), _putchar(c + '0');
