@@ -8,23 +8,25 @@
  * Return: a pointer to the byte in s that matches one of the
  * bytes in accept
  */
-char *_strchr(char *s, char c)
-{
-	while (*s++)
-	{
-	if (*s == c)
-		return (s);
-	}
-return (0);
-}
 char *_strpbrk(char *s, char *accept)
 {
 	if ((s == NULL) || (accept == NULL))
 		return (NULL);
-	while (*s)
+	
+	*char temp;
+
+	while (*s != '\0')
 	{
-	if (_strchr(accept, *s))
-	return ((char *)str);
-	str++;
+	temp = accept;
+	
+	while (*temp != '\0')
+	{
+		if (*s == *temp)
+		{
+			return (s);
+		}
+		temp++;
+	}
+	s++;
 	}
 }
