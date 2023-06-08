@@ -8,15 +8,18 @@
 
 char *leet(char *str)
 {
-	char *leet_table = "43071";
-	int i;
+	char array[] = "aAeEoOtTlL";
+	char leet_table[] = "4433007711";
+	int i, x;
 
-for (i = 0; str[i] != '\0'; i++)
+for (i = 0; array[i] != '\0'; i++)
 {
-	if (strchr("aAeEoOtTlL", str[i]))
+	for (x = 0; x < 10; x++)
 	{
-str[i] = leet_table[str[i] - 'a'];
+	if (str[i] == array[j])
+	{
+		str[i] = array[j];
 	}
-}
+	}
 return (str);
 }
