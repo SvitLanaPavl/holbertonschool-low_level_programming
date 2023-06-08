@@ -9,16 +9,13 @@
 char *leet(char *str)
 {
 	char array[] = "aAeEoOtTlL";
-	char leet_table[] = "4433007711";
-	int i, x;
+	char leet_table[] = "4433007711\0";
+	int i;
 
 for (i = 0; str[i] != '\0'; i++)
 {
-	for (x = 0; leet_table[x] < 10; x++)
-	{
-	if (str[i] == array[x])
-		str[i] = leet_table[x];
-	}
+	if (str[i] == array[i])
+		str[i] = leet_table[i];
 }
 return (str);
 }
