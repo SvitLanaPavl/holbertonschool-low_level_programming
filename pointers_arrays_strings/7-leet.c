@@ -16,9 +16,9 @@ for (i = 0; array[i] != '\0'; i++)
 {
 	for (x = 0; x < 10; x++)
 	{
-	if (str[i] == array[j])
+	if (str[i] == array[x])
 	{
-		str[i] = array[j];
+		str[i] = array[x];
 	}
 	}
 return (str);
