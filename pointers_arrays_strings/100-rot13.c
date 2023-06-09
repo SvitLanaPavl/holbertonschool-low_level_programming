@@ -7,12 +7,23 @@
  */
 char *rot13(char *str)
 {
-int i;
+int i, holder, chr;
 
-for (i = 0; str[i] != '\0';i++)
+for (i = 0; i < strlen(str); i++)
 {
-	if (str[i] >= 'a' && str[i] + 13 <= 'z')
-		str[i] += 13;
+	holder = str[i];
+	holder += 13;
+
+	if (holder > 90)
+	{
+		holder = holder - 90 + 64;
+		chr = holder;
+		str[i] = chr;
+	}
+	else
+	{
+		chr = holder;
+		str[i] = chr;
 }
 return (str);
 }
