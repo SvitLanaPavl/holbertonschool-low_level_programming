@@ -20,6 +20,7 @@ if (index != -1)
 {
 str[i] = alphabet[(index + 13) % 26];
 }
+str[i] = c;
 }
 return (str);
 }
