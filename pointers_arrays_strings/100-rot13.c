@@ -21,10 +21,7 @@ for (i = 0; str[i] != '\0'; i++)
 		str[i] = chr;
 	}
 	else
-	{
-		chr = holder;
-		str[i] = chr;
-	}
+		chr = holder, str[i] = chr;
 }
 return (str);
 }
