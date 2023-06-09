@@ -15,7 +15,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	int i, sum;
 	int flag = 0;
 	
-	_memset(r, 0, size_r);
+	memset(r, 0, size_r);
 
 	for (i = 0; n1[i] != '\0' && n2[i] != '\0'; i++)
 	{
