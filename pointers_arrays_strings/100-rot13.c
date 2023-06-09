@@ -11,11 +11,11 @@ int i;
 
 for (i = 0; str[i] != '\0'; i++)
 {
-	if (*(str + i) >= 'a' && *(str +i) < 'n')
-		*(str + i) += 13;
+	if (str[i] >= 'a' && str[i] < 'n')
+		str[i] += 13;
 	
-	else (*(str + i) >= 'n' && *(str + i) <= 'z')
-		*(str + i) -= 13;
+	else (str[i] >= 'n' && str[i] <= 'z')
+		str[i] -= 13;
 }
 return (str);
 }
