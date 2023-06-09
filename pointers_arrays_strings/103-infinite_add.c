@@ -10,27 +10,15 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	unsigned int value1 = 0;
-	unsigned int value2 = 0;
-	int i, sum;
-	int flag = 0;
+	int a, b, sum;
 	
 	memset(r, 0, size_r);
 
-	for (i = 0; n1[i] != '\0' && n2[i] != '\0'; i++)
-	{
-		while ((n1[i] >= '0' && n1[i] <= '9') && (n1[i] >= '0' && n1[i] <= '9'))
-		      {
-			      flag = 1;
-			      value1 = value1 * 10 + n1[i] - '0';
-			      value2 = value2 * 10 + n1[i] - '0';
-			      i++;
-		      }
-		if (flag == 0)
-		break;
+	a = atoi(n1);
+	b = atoi(n2);
 
-		sum = value1 + value2;
-		r[i] = sum;
+	sum = a + b;;
+	r = sum;
 	}
 return (r);
 }
