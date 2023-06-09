@@ -10,15 +10,25 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int a, b, sum;
-	
+	int i, carry, sum, digit1, digit2;
+
+	if (size_r < strlen(n1) + strlen(n2) + 1)
+	{
+		return (NULL);
+	}
 	memset(r, 0, size_r);
 
-	a = atoi(n1);
-	b = atoi(n2);
+	carry = 0;
 
-	sum = a + b;;
-	r = sum;
+	for (i = 0; i < strlen(n1) || i<strlen(n2); i++)
+	{
+		digit1 = i < strlen(n1) ? n1[i] - '0' : 0;
+		digit2 = i < strlen(n2) ? n2[i] - '0' : 0;
+		sum - digit1 + digit2 + carry;
+		r[i] = sum % 10 + '0';
 	}
+	if (carry > 0)
+	r[strlen(n1) + strlen(n2)] = carry + '0';
+
 return (r);
 }
