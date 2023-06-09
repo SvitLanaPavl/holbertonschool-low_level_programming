@@ -11,9 +11,9 @@ char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 int i, j;
 
-for (i = 0; str[i] != '\0')
+for (i = 0; str[i] != '\0'; i++)
 {
-for (j = 0; alphabet[j] != '\0', rot[j] != '\0'; j++)
+for (j = 0; alphabet[j] != '\0' && rot[j] != '\0'; j++)
 {
 	if (str[i] == alphabet[j])
 	{
