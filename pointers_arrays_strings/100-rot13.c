@@ -9,7 +9,7 @@ char *rot13(char *str)
 {
 int i, holder, chr;
 
-for (i = 0; i < strlen(str); i++)
+for (i = 0; str[i] != '\0'; i++)
 {
 	holder = str[i];
 	holder += 13;
@@ -24,6 +24,7 @@ for (i = 0; i < strlen(str); i++)
 	{
 		chr = holder;
 		str[i] = chr;
+	}
 }
 return (str);
 }
