@@ -20,8 +20,8 @@ for (i = 0; str[i] != '\0'; i++)
 		chr = holder;
 		str[i] = chr;
 	}
-	else
-		chr = holder, str[i] = chr;
+	chr = holder; 
+	str[i] = chr;
 }
 return (str);
 }
