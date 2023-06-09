@@ -7,15 +7,16 @@
  */
 char *rot13(char *str)
 {
-char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+char rot[] = "nopqrstuvwxyzabcdefghijklm";
 int i, j;
 
 for (i = 0; str[i] != '\0'; i++)
 {
 for (j = 0; alphabet[j] != '\0'; j++)
 {
-	if (str[i] == alphabet[j])
+	str[i] = toupper(str[i]);
+	if (str[i] == alphabet[j] && alphabet[j])
 	{
 		str[i] = rot[j];
 	}
