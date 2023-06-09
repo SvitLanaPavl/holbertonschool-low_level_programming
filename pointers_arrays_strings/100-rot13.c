@@ -7,20 +7,15 @@
  */
 char *rot13(char *str)
 {
-char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-char rot[] = "nopqrstuvwxyzabcdefghijklm";
-int i, j;
+int i;
 
 for (i = 0; str[i] != '\0'; i++)
 {
-for (j = 0; alphabet[j] != '\0'; j++)
-{
-	str[i] = toupper(str[i]);
-	if (str[i] == alphabet[j] && alphabet[j])
-	{
-		str[i] = rot[j];
-	}
-}
+	if (*(str + i) >= 'a' && *(str +i) < 'n')
+		*(str + i) += 13;
+	
+	else ( *(str + i) >= 'n' && *(str + i) <= 'z'
+		*(str + i) -= 13;
 }
 return (str);
 }
