@@ -9,8 +9,9 @@ char *rot13(char *str)
 {
 char *alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 int len = strlen(str);
+int i;
 
-for (int i = 0; i < len; i++)
+for (i = 0; i < len; i++)
 {
 char c = str[i];
 int index = strchr(alphabet, c) - alphabet;
