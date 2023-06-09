@@ -7,22 +7,18 @@
  */
 char *rot13(char *str)
 {
-int i, holder, chr;
-int length = strlen(str);
+char *alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int len = strlen(str);
 
-for (i = 0; i < length; i++)
+for (int i = 0; i < len; i++)
 {
-	holder = str[i];
-	holder += 13;
+char c = str[i];
+int index = strchr(alphabet, c) - alphabet;
 
-	if (holder > 90)
-	{
-		holder = holder - 90 + 64;
-		chr = holder;
-		str[i] = chr;
-	}
-	chr = holder;
-	str[i] = chr;
+if (index != -1)
+{
+str[i] = alphabet[(index + 13) % 26];
+}
 }
 return (str);
 }
