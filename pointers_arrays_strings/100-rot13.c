@@ -7,20 +7,20 @@
  */
 char *rot13(char *str)
 {
-char *alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-int len = strlen(str);
-int i;
+char *alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char *rot[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+int i, j;
 
-for (i = 0; i < len; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
-char c = str[i];
-int index = strchr(alphabet, c) - alphabet;
-
-if (index != -1)
+for (j = 0; alphabet[j] != '\0'; j++)
 {
-str[i] = alphabet[(index + 13) % 26];
+if (str[i] == alphabet[j])
+{
+str[i] = rot[j];
+break;
 }
-str[i] = c;
+}
 }
 return (str);
 }
