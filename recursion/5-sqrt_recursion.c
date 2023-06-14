@@ -10,7 +10,8 @@ int _sqrt_recursion(int n)
 	if (n == 0)
 	return (0);
 
-	int guess = n / 2;
+	int guess; 
+	guess = n / 2;
 	return (square_root_averg(n, guess));
 
 	int square_root_averg(int n, int guess)
