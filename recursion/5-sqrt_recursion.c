@@ -6,14 +6,14 @@
  * @square: square root argument
  * Return: natural square root of a number, otehrwise -1
  */
-int root_helper (int n, int square)
+int root_helper(int n, int square)
 {
 	if ((square * square) == n)
 	return (square);
 
 	if (square == n / 2)
 	return (-1);
-	
+
 	return (root_helper(n, square + 1));
 }
 /**
