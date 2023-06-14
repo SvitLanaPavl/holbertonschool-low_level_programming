@@ -7,20 +7,17 @@
 */
 int _sqrt_recursion(int n)
 {
+	int guess, next_guess;
+
 	if (n == 0)
 	return (0);
 
-	int guess; 
 	guess = n / 2;
-	return (square_root_averg(n, guess));
-
-	int square_root_averg(int n, int guess)
-	{
 	int next_guess = (guess + n / guess) / 2;
+	int difference = guess - next_guess;
 
-	if (fabs(guess - next_guess) < 1e-10)
-		return (guess);
+	if (difference < 1e-10)
+	return (guess);
 
-	return (square_root_averg(n, next_guess));
-	}
+	return (_sqrt_recursion((n / guess + guess) / 2));
 }
