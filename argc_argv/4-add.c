@@ -15,7 +15,10 @@ int main(int argc, char *argv[])
 	bool isDigit = true;
 
 	if (argc == 0)
-	printf("0\n"), return (0);
+	{
+	printf("0\n");
+	return (0);
+	}
 
 	for (i = 0; i < argc; i++)
 	{
@@ -26,9 +29,11 @@ int main(int argc, char *argv[])
 
 	if (isDigit)
 	sum += atoi(argv[i]);
-
 	else
-	printf("Error\n"), return (1);
+	{
+	printf("Error\n");
+	return (1);
+	}
 	}
 	printf("%d", sum);
 	return (0);
