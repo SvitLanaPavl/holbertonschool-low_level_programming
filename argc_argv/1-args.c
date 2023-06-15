@@ -9,8 +9,9 @@
 int main(int argc, char *argv[])
 {
 int number = argc;
+(void) *argv[0];
 
-_putchar(argc + '0');
+_putchar(number + '0');
 
 _putchar('\n');
 return (0);
