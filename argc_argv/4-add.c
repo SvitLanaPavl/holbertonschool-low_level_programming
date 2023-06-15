@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	{
 	char chr = argv[i];
 
-	if (c < '0' || c > '9')
+	if (chr < '0' || chr > '9')
 	isDigit = false, break;
 
 	if (isDigit)
