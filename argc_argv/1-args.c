@@ -8,7 +8,7 @@
 */
 int main(int argc, char *argv[])
 {
-int number = argc;
+int number = argc - 1;
 (void) *argv[0];
 
 _putchar(number + '0');
