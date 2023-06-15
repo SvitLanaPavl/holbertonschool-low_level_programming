@@ -13,7 +13,7 @@ int i, j;
 
 for (i = 0; i < argc; i++)
 {
-for (j = 0; j < strlen(argv[i]); j++)
+for (j = 0; j < (int)strlen(argv[i]); j++)
 {
 _putchar(argv[i][j]);
 }
