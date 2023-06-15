@@ -8,10 +8,9 @@
 */
 int main(int argc, char *argv[])
 {
-int i;
+int number = argc;
 
-for (i = 0; i <= NULL; i++)
-_putchar(argc);
+_putchar(argc + '0');
 
 _putchar('\n');
 return (0);
