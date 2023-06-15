@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 int i;
 
-for (i = 0; i <= argv[0]; i++)
+for (i = 0; i <= NULL; i++)
 _putchar(argc);
 
 _putchar('\n');
