@@ -8,10 +8,11 @@
 * Return: Always 0
 */
 
-int main((void)argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int i;
 char *name = argv[0];
+(void)argc;
 
 for (i = 0; name[i] != '\0'; i++)
 _putchar(name[i]);
