@@ -31,11 +31,11 @@ int main(int argc, char *argv[])
 	}
 	if (isDigit)
 	sum += atoi(argv[i]);
-	}
 	else
 	{
 	printf("Error\n");
 	return (1);
+	}
 	}
 	printf("%d", sum);
 	return (0);
