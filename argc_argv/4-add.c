@@ -21,9 +21,8 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-	char chr = *argv[i];
 
-	if (chr > '0' && chr < '9')
+	if (*argv[i] > '0' && *argv[i] < '9')
 	sum += atoi(argv[i]);
 	
 	else
