@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 	char chr;
-	bool isDigit = true;
 
 	if (argc == 0)
 	{
@@ -24,11 +23,9 @@ int main(int argc, char *argv[])
 	{
 	char chr = argv[i];
 
-	if (chr < '0' || chr > '9')
-	isDigit = false, break;
-
-	if (isDigit)
+	if (chr > '0' && chr < '9')
 	sum += atoi(argv[i]);
+	
 	else
 	{
 	printf("Error\n");
