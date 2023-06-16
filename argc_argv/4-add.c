@@ -10,7 +10,7 @@
 */
 int main(int argc, char *argv[])
 {
-	int i, j, len, sum = 0;;
+	int i, j, len, sum = 0;
 
 	if (argc < 2)
 	{
@@ -27,7 +27,6 @@ int main(int argc, char *argv[])
 	{
 	printf("Error\n");
 	return (1);
-	break;
 	}
 	}
 	}
