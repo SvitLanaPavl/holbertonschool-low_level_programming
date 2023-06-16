@@ -10,32 +10,21 @@
 */
 int main(int argc, char *argv[])
 {
-	int i, j, sum, len = 0;
-	bool isDigit = true;
+	int i, j, sum, len = 0;;
 
-	if (argc == 0)
+	if (argc < 2)
 	{
 	printf("0\n");
 	return (0);
 	}
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-	len = strlen(argv[i]);
-	for (j = 0; j < len; j++)
-	{
-	if (argv[i][j] < '0' || argv[i][j] > '9')
-	{
-	isDigit = false;
-	break;
+	sum += atoi(argv[i]);
 	}
-	}
-	if (isDigit)
-	sum += atoi((char *)argv[i][j]);
-	else
+	if (argv[i] < '1' || argv[i] > '9')
 	{
 	printf("Error\n");
 	return (1);
-	}
 	}
 	printf("%d", sum);
 	return (0);
