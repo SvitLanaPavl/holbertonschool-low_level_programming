@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	}
 	}
 	if (isDigit)
-	sum += atoi(argv[i][j]);
+	sum += atoi((char *)argv[i][j]);
 	else
 	{
 	printf("Error\n");
