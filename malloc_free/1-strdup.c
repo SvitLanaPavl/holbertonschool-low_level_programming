@@ -13,9 +13,6 @@ char *_strdup(char *str)
 	size_t length = strlen(str) + 1;
 	char *new_str = malloc(length);
 
-	if (length >= MAX_MEMORY)
-	return (NULL);
-
 	if (new_str == NULL)
 	return (NULL);
 
