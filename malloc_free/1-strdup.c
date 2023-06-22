@@ -1,5 +1,5 @@
 #include "main.h"
-#define MAX_MEMORY 1024
+#include <stdlib.h>
 /**
  * _strdup - returns pointer to a newly allocated space in memory
  * Description: returns a pointer to a newly allocated space in
