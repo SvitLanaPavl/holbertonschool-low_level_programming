@@ -4,7 +4,8 @@
  * Description: returns a pointer to a newly allocated space in
  * memory which contains a copy of the string given as a parameter
  * @str: string argument
- * Return: pointer to the duplicated string, NULL if insufficient memory available
+ * Return: pointer to the duplicated string, NULL if insufficient memory
+ * available
  */
 char *_strdup(char *str)
 {
