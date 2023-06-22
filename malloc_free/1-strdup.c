@@ -12,6 +12,7 @@ char *_strdup(char *str)
 {
 	size_t length = strlen(str) + 1;
 	char *new_str;
+	unsigned int i;
 
 	if (str == NULL)
 	return (NULL);
@@ -20,6 +21,9 @@ char *_strdup(char *str)
 	if (new_str == 0)
 	return (NULL);
 
-	memcpy(new_str, str, length);
+	for (i = 0; i < length; i++)
+	{
+	new_str[i] = str[i];
+	}
 	return (new_str);
 }
