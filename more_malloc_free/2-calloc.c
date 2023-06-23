@@ -8,13 +8,13 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	if (nmemb == 0 || size == 0)
+	return (NULL);
+
 	void *memptr = malloc(nmemb * size);
 
 	if (memptr != NULL)
 	memset(memptr, 0, nmemb * size);
-
-	if (nmemb == 0 || size == 0)
-	return (NULL);
 
 	return (memptr);
 }
