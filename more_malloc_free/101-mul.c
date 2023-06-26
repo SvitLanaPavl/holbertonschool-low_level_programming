@@ -9,14 +9,15 @@
 int main(int argc, char *argv[])
 {
 	int n1, n2, mul;
+	char *num1, *num2;
 
 	if (argc != 3)
 	{
 	printf("Error\n");
 	exit(98);
 	}
-	char *num1 = argv[1];
-	char *num2 = argv[2];
+	num1 = argv[1];
+	num2 = argv[2];
 
 	if (!is_digit(num1) || !is_digit(num2))
 	{
