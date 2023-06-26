@@ -7,15 +7,15 @@
  */
 char **strtow(char *str)
 {
+char *copy = strdup(str);
 char **word = NULL;
 char *token = NULL;
 int i = 0;
 
-if (str == NULL || str[0] == '\0')
+if (copy == NULL || copy[0] == '\0')
 	return (NULL);
 
-str[strlen(str)] = '\0';
-token = strtok(str, " ");
+token = strtok(copy, " ");
 while (token != NULL)
 {
 	word = realloc(word, sizeof(char *) * (i + 1));
@@ -25,5 +25,6 @@ while (token != NULL)
 }
 
 word[i] = NULL;
+free(copy);
 return (word);
 }
