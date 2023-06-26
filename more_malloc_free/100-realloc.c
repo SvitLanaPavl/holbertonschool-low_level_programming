@@ -19,14 +19,13 @@ free(ptr);
 }
 return (NULL);
 }
-if (new_size > old_size)
-{
-new_ptr = realloc(ptr, new_size);
 if (ptr == NULL)
-return (NULL);
+{
+new_ptr = malloc(new_size);
 }
-memcpy(new_ptr, ptr, old_size);
-if (new_size == old_size)
+else
+{
+if (new_size <= old_size)
 	{
 	return (ptr);
 	}
@@ -37,6 +36,6 @@ return (NULL);
 }
 memcpy(new_ptr, ptr, old_size);
 free(ptr);
-
+}
 return (new_ptr);
 }
