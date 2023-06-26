@@ -14,14 +14,19 @@ int i, length = 1;
 if (ac == 0 || av == NULL)
 return (NULL);
 
-for (i = 0; i < ac; i++)
+for (i = 1; i < ac; i++)
 {
-length =+ strlen(av[i]) + 1;
+length =+ strlen(av[i]);
 }
 new_str = malloc(length * sizeof(char));
 
+for (i = 1; i < ac; i++)
+{
+strcat(new_str, av[i]);
+}
 if (new_str == NULL)
 return (NULL);
 
 return (new_str);
+free(new_str);
 }
