@@ -28,6 +28,8 @@ int main(int argc, char *argv[])
 	n2 = atoi(num2);
 	mul = n1 * n2;
 	printf("%d\n", mul);
+	free(num1);
+	free(num2);
 	return (0);
 }
 /**
