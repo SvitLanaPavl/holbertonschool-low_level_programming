@@ -14,6 +14,7 @@ int i = 0;
 if (str == NULL || str[0] == '\0')
 	return (NULL);
 
+str[strlen(str)] = '\0';
 token = strtok(str, " ");
 while (token != NULL)
 {
