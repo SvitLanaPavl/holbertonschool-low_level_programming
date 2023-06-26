@@ -26,7 +26,7 @@ if (ptr == NULL)
 return (NULL);
 }
 memcpy(new_ptr, ptr, old_size);
-else if (new_size == old_size)
+if (new_size == old_size)
 	{
 	return (ptr);
 	}
