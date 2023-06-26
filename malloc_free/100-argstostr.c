@@ -16,7 +16,7 @@ return (NULL);
 
 for (i = 1; i < ac; i++)
 {
-length += strlen(av[i]);
+length += strlen(av[i]) + 1;
 }
 new_str = malloc(length * sizeof(char));
 
