@@ -19,10 +19,9 @@ for (i = 1; i < ac; i++)
 length += strlen(av[i]);
 }
 new_str = malloc(length *sizeof(char));
-new_str[0] = '\n';
 for (i = 1; i < ac; i++)
 {
-strcat(new_str, "\n");
+strcat(new_str, "\n ");
 strcat(new_str, av[i]);
 }
 if (new_str == NULL)
