@@ -21,12 +21,13 @@ for (i = 0; i < ac; i++)
 	length++;
 	}
 }
-new_str = malloc((length + ac + 1) *sizeof(char));
+new_str = malloc((length + ac + 1) * sizeof(char));
 for (i = 0, length = 0; i < ac; i++)
 {
 for (j = 0; av[i][j] != '\0'; j++, length++)
 new_str[length] = av[i][j];
 new_str[length] = '\n';
+length++;
 }
 if (new_str == NULL)
 return (NULL);
