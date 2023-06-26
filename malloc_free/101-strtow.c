@@ -11,7 +11,7 @@ char **word = NULL;
 char *token = NULL;
 int i = 0;
 
-if (str == NULL || str[0] = '\0')
+if (str == NULL || str[0] == '\0')
 	return (NULL);
 
 token = strtok(str, " ");
