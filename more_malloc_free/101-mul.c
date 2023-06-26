@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int n1, n2, mul, i, j;
+	int n1, n2, mul;
 	char *num1, *num2;
 
 	if (argc != 3)
@@ -19,17 +19,27 @@ int main(int argc, char *argv[])
 	num1 = argv[1];
 	num2 = argv[2];
 
-	for (i = 0, j = 0; num1[i] != '\0' && num2[j] != '\0'; i++, j++)
-	{
-	if ((num1[i] < '0' && num1[i] > '9') || (num2[j] < '0' && num2[i] > '9'))
+	if (!is_digits(num1) || !is_digits(num2))
 	{
 	printf("Error\n");
 	exit(98);
-	}
 	}
 	n1 = atoi(num1);
 	n2 = atoi(num2);
 	mul = n1 * n2;
 	printf("%d\n", mul);
 	return (0);
+}
+int is_digits (char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+	if (str[i] < '0' || str[i] > '9')
+	{
+		return (0);
+	}
+	}
+	return (1);
 }
