@@ -14,14 +14,12 @@ int i, length = 1;
 if (ac == 0 || av == NULL)
 return (NULL);
 
-for (i = 1; i < ac; i++)
+for (i = 0; i < ac; i++)
 {
 length += strlen(av[i]);
 }
 new_str = malloc(length *sizeof(char));
-strcpy(new_str, "./100-args");
-strcat(new_str, "\n");
-for (i = 1; i < ac; i++)
+for (i = 0; i < ac; i++)
 {
 strcat(new_str, av[i]);
 strcat(new_str, "\n");
