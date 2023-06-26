@@ -30,7 +30,13 @@ int main(int argc, char *argv[])
 	printf("%d\n", mul);
 	return (0);
 }
-int is_digits (char *str)
+/**
+ * is_digits - checks for digits
+ * Description: checks for digits
+ * @str: string argument
+ * Return: 0 Success, 1 Failure
+ */
+int is_digits(char *str)
 {
 	int i;
 
