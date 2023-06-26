@@ -22,6 +22,7 @@ new_str = malloc(length *sizeof(char));
 for (i = 1; i < ac; i++)
 {
 strcpy(new_str, "./100-args");
+strcat(new_str, "\n ");
 strcat(new_str, av[i]);
 strcat(new_str, "\n");
 }
