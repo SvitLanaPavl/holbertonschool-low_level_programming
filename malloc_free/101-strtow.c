@@ -17,7 +17,7 @@ if (str == NULL || str[0] == '\0')
 token = strtok(str, " ");
 while (token != NULL)
 {
-	word = realloc(word, sizeof(char *) * (i + 1));
+	word = malloc(word, sizeof(char *) * (i + 1));
 	word[i] = token;
 	i++;
 	token = strtok(NULL, " ");
