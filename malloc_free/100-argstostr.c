@@ -16,7 +16,7 @@ return (NULL);
 
 for (i = 0; i < ac; i++)
 {
-	for (j = 0; j != '\0'; j++)
+	for (j = 0; av[j] != '\0'; j++)
 	{
 	length++;
 	}
