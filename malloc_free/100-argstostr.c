@@ -22,4 +22,6 @@ new_str = malloc(length * sizeof(char));
 
 if (new_str == NULL)
 return (NULL);
+
+return (new_str);
 }
