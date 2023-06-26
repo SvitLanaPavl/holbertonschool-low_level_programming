@@ -14,7 +14,7 @@ int i, length = 1;
 if (ac == 0 || av == NULL)
 return (NULL);
 
-for (i = 0; i < ac; i++)
+for (i = 1; i < ac; i++)
 {
 length += strlen(av[i]);
 }
