@@ -9,19 +9,22 @@
 char *argstostr(int ac, char **av)
 {
 char *new_str;
-int i, length = 1;
+int i, j, length = 1;
 
 if (ac == 0 || av == NULL)
 return (NULL);
 
-for (i = 1; i < ac; i++)
-{
-length += strlen(av[i]);
-}
-new_str = malloc(length *sizeof(char));
 for (i = 0; i < ac; i++)
 {
-strcat(new_str, av[i]);
+	for (j = 0; j != '\0'; j++)
+	{
+length += strlen(av[i][j]);
+	}
+}
+new_str = malloc(length *sizeof(char));
+for (i = 0, j = 0; i < ac; i++)
+{
+strcat(new_str, av[i][j]);
 strcat(new_str, "\n");
 }
 if (new_str == NULL)
