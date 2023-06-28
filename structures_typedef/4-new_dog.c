@@ -16,10 +16,10 @@ return (NULL);
 
 new_dog->name = strdup(name);
 new_dog->owner = strdup(owner);
-new_dog->age = (int)age;
+new_dog->age = age;
 
 return (new_dog);
 free(new_dog->name);
 free(new_dog->owner);
-free(new_dog->age);
+free((void *)&new_dog->age);
 }
