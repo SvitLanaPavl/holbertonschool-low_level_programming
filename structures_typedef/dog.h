@@ -13,5 +13,9 @@ struct dog
 	char *name;
 	float age;
 	char *owner;
+/*
+ *Description: struct dog description
+ *
+ */
 };
 #endif
