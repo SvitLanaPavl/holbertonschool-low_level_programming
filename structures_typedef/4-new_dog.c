@@ -21,17 +21,17 @@ if (new_dog == NULL)
 free(new_dog);
 return (NULL);
 }
-
-new_dog->name = malloc(sizeof(strlen(name)+1));
+new_dog->name = malloc(sizeof(strlen(name) + 1));
 if (new_dog->name == NULL)
 {
 free(new_dog);
 return (NULL);
 }
-new_dog->owner = malloc(sizeof(strlen(owner)+1));
+new_dog->owner = malloc(sizeof(strlen(owner) + 1));
 if (new_dog->owner == NULL)
 {
 free(new_dog->name);
+free(new_dog);
 return (NULL);
 }
 new_dog->name = strdup(name);
