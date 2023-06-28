@@ -5,6 +5,7 @@
  * @name: name member
  * @age: age member
  * @owner: owner member
+ *
  * Description: dog structure
  */
 struct dog
