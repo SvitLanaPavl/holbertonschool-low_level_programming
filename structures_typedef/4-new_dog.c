@@ -18,6 +18,6 @@ new_dog->name = strdup(name);
 new_dog->owner = strdup(owner);
 new_dog->age = age;
 
-free(new_dog);
 return (new_dog);
+free(new_dog);
 }
