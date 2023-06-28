@@ -5,17 +5,19 @@
  * @name: name
  * @age: age
  * @owner: owner
+ * Return: new_dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *new_dog = malloc(sizeof(dog_t));
 
 if (new_dog == NULL)
-return NULL;
+return (NULL);
 
 new_dog->name = strdup(name);
 new_dog->owner = strdup(owner);
 new_dog->age = age;
 
+free(new_dog);
 return (new_dog);
 }
