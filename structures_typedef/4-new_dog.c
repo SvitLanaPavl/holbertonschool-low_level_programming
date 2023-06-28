@@ -13,8 +13,8 @@ dog_t *new_dog = malloc(sizeof(dog_t));
 if (new_dog == NULL)
 return NULL;
 
-new_dog->name = dog_t->name;
-new_dog->owner = dog_t->owner;
+new_dog->name = strdup(name);
+new_dog->owner = strdup(owner);
 new_dog->age = age;
 
 return (new_dog);
