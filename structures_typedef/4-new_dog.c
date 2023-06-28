@@ -19,9 +19,7 @@ new_dog->owner = strdup(owner);
 new_dog->age = age;
 
 return (new_dog);
-}
-
-void free_dog(dog_t *dog){
-free(dog->name);
-free(dog->owner);
+free(new_dog->name);
+free(new_dog->owner);
+free(new_dog->age);
 }
