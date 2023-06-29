@@ -14,7 +14,8 @@ char *c;
 for (i = 0; i < strlen(name); i++)
 {
 c = &name[i];
-_putchar(f(c));
+f(c);
+_putchar(*c);
 }
 _putchar(' ');
 }
