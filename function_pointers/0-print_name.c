@@ -8,14 +8,5 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-size_t i;
-char *chr;
-
-for (i = 0; i < strlen(name); i++)
-{
-chr = &name[i];
-f(chr);
-_putchar(*chr);
-}
-_putchar(' ');
+f(name);
 }
