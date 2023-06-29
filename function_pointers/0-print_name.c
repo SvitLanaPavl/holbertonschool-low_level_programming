@@ -9,13 +9,13 @@
 void print_name(char *name, void (*f)(char *))
 {
 size_t i;
-char *c;
+char *chr;
 
 for (i = 0; i < strlen(name); i++)
 {
 c = &name[i];
-f(c);
-_putchar(*c);
+f(chr);
+_putchar(*chr);
 }
 _putchar(' ');
 }
