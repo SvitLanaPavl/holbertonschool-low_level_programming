@@ -23,7 +23,7 @@ while (ops[i].op != NULL)
 {
 if (strcmp(s, ops[i].op) == 0)
 {
-return (ops[i].f)
+return (ops[i].f);
 }
 i++;;
 }
