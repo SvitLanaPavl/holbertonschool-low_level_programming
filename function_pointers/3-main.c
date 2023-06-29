@@ -21,13 +21,10 @@ int main(int argc, char **argv)
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 	func = get_op_func(operator);
-	if (strcmp(operator, "/") == 0 || strcmp(operator,"%") == 0)
+	if ((strcmp(operator, "/") == 0 || strcmp(operator,"%") == 0) && (b == 0))
 	{
-		if (b == 0)
-		{
 		printf("Error\n");
 		exit(100);
-		}
 	}
 	if (func == NULL)
 	{
