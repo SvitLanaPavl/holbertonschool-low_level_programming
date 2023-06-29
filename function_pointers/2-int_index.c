@@ -21,6 +21,6 @@ if (array[i] >= 0 && array[i] <= 9)
 cmp(array[i]);
 return (i);
 }
-return (-1);
 }
+return (-1);
 }
