@@ -25,7 +25,7 @@ if (strcmp(s, ops[i].op) == 0)
 {
 return (ops[i].f);
 }
-i++;;
+i++;
 }
 return (NULL);
 }
