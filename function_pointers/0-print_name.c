@@ -13,7 +13,7 @@ char *chr;
 
 for (i = 0; i < strlen(name); i++)
 {
-c = &name[i];
+chr = &name[i];
 f(chr);
 _putchar(*chr);
 }
