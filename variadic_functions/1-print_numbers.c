@@ -19,7 +19,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 	number = va_arg(ap, int);
 	printf("%d%s", number, separator);
+	
+	if (i == n - 1)
+	printf("%d", number);
 	}
 	va_end(ap);
-	_putchar('\n');
 }
