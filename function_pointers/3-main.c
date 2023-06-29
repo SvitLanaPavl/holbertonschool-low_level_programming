@@ -6,7 +6,7 @@
  * @argv: argument vector
  * Return: result, error if fails
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv)
 {
 	char *operator;
 	int a, b, result;
@@ -17,10 +17,10 @@ int main(int argc, char **argv)
 	printf("Error\n");
 	exit(98);
 	}
-	operator = argv[1];
-	a = atoi(argv[2]);
-	b = atoi(argv[3]);
+	operator = argv[2];
 	func = get_op_func(operator);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 	if (!func)
 	{
 	printf("Error\n");
