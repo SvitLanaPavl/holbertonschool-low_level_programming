@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(100);
 	}
-	if (func == NULL)
+	if (op_t.op == NULL)
 	{
 	printf("Error\n");
 	exit(99);
