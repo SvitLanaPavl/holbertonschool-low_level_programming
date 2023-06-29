@@ -12,7 +12,7 @@ size_t i;
 for (i = 0; i < strlen(name); i++)
 {
 if (i == (strlen(name) - 1))
-f(name[i];
+f(name[i]);
 
 else
 _putchar(f(name[i]));
