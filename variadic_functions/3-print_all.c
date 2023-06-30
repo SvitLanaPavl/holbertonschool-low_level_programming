@@ -67,10 +67,10 @@ while (elems[j].type)
 	printf("%s", separator);
 	elems[j].f(ap);
 	separator = ", ";
-	break;
 	}
 ++j;
 }
+j = 0;
 ++i;
 }
 va_end(ap);
