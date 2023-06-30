@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	if (separator == NULL)
 	separator = "";
 
-	if (i == n - 1 && separator == NULL)
+	if (i == n - 1)
 	{
 	separator = "";
 	printf("%s%s", string, separator);
