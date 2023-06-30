@@ -71,7 +71,6 @@ while (elems[j].type)
 	}
 ++j;
 }
-j = 0;
 ++i;
 }
 va_end(ap);
