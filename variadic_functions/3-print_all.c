@@ -17,6 +17,7 @@ va_start(ap, format);
 while (*format != '\0')
 {
 	switch (*format)
+	{
 	case 'c':
 		c = va_arg(ap, int);
 		printf("%c", c);
@@ -38,7 +39,7 @@ while (*format != '\0')
 		printf("%s", s);
 		break;
 	default:
-		break;
+	}	break;
 format++;
 }
 va_end(ap);
