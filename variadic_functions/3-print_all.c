@@ -30,6 +30,7 @@ void print_float(va_list ap)
 void print_string(va_list ap)
 {
 	char *s = va_arg(ap, char *);
+	
 	if (!s)
 	{
 	printf("(nil)");
@@ -71,7 +72,8 @@ while (elems[j].type)
 }
 j = 0;
 ++i;
-}	
+}
+return (NULL);
 va_end(ap);
 printf("\n");
 }
