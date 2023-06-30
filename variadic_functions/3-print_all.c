@@ -13,10 +13,10 @@ float f;
 char *s;
 va_list ap;
 va_start(ap, format);
-if (*format == NULL)
+if (!format)
 return;
 
-while (*format != NULL)
+while (format != '\0')
 {
 	switch (*format)
 	{
