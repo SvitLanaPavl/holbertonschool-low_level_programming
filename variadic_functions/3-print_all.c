@@ -23,12 +23,12 @@ while (*format != '\0')
 		printf("%c", c);
 		break;
 	case 'f':
-		f = va_arg(ap, float);
+		f = va_arg(ap, double);
 		printf("%f", f);
 		break;
 	case 'i':
 		c = va_arg(ap, int);
-		printf("d", i);
+		printf("%d", i);
 		break;
 	case 's':
 		s = va_arg(ap, char *);
@@ -38,9 +38,7 @@ while (*format != '\0')
 		else
 		printf("%s", s);
 		break;
-	default:
-	}	break;
-format++;
+	}
 }
 va_end(ap);
 }
