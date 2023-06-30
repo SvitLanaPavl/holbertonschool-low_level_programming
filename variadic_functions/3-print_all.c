@@ -21,15 +21,15 @@ while (format[counter] != '\0')
 	{
 	case 'c':
 		c = va_arg(ap, int);
-		printf("%c%c", c, separator);
+		printf("%c%s", c, separator);
 		break;
 	case 'f':
 		f = va_arg(ap, double);
-		printf("%f%c", f, separator);
+		printf("%f%s", f, separator);
 		break;
 	case 'i':
 		i = va_arg(ap, int);
-		printf("%d%c", i, separator);
+		printf("%d%s", i, separator);
 		break;
 	case 's':
 		s = va_arg(ap, char *);
@@ -38,7 +38,7 @@ while (format[counter] != '\0')
 		printf("(nil)");
 		return;
 		}
-		printf("%s%c", s, separator);
+		printf("%s%s", s, separator);
 		break;
 	}
 ++counter;
