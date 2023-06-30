@@ -13,8 +13,10 @@ float f;
 char *s;
 va_list ap;
 va_start(ap, format);
+if (*format == NULL)
+return;
 
-while (*format)
+while (*format != NULL)
 {
 	switch (*format)
 	{
@@ -41,5 +43,5 @@ while (*format)
 	}
 }
 va_end(ap);
-printf("\n");
+printf('\n');
 }
