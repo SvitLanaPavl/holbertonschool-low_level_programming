@@ -7,7 +7,7 @@
  */
 void print_all(const char * const format, ...)
 {
-int i;
+int i, counter;
 char c;
 float f;
 char *s;
@@ -16,9 +16,9 @@ va_start(ap, format);
 if (!format)
 return;
 
-while (*format)
+while (format[counter] != '\0')
 {
-	switch (*format)
+	switch (format[counter])
 	{
 	case 'c':
 		c = va_arg(ap, int);
@@ -41,6 +41,7 @@ while (*format)
 		printf("%s", s);
 		break;
 	}
+++counter;
 }
 va_end(ap);
 printf("\n");
