@@ -13,9 +13,11 @@ va_list ap;
 while (format)
 {
 va_start(ap, format);
-while (format[i]) {
+while (format[i])
+{
 flag = 1;
-switch (format[i]) {
+switch (format[i])
+{
 case 'c':
 printf("%c", va_arg(ap, int));
 break;
