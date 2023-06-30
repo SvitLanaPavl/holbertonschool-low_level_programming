@@ -56,7 +56,7 @@ print_f elems[] = {
 	{"f", print_float},
 	{"s", print_string},
 	{NULL, NULL}
-}
+};
 while (format[i] && format)
 {
 while (elems[j].type)
