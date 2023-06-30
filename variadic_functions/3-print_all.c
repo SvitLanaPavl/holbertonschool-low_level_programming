@@ -40,7 +40,7 @@ while (format[counter] != '\0')
 		{
 		printf("(nil)");
 		}
-		printf("%s, ", s);
+		printf("%s", s);
 		break;
 	}
 ++counter;
