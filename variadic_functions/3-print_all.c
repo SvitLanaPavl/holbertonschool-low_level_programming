@@ -16,7 +16,7 @@ va_start(ap, format);
 if (!format)
 return;
 
-while (format != '\0')
+while (*format)
 {
 	switch (*format)
 	{
@@ -43,5 +43,5 @@ while (format != '\0')
 	}
 }
 va_end(ap);
-printf('\n');
+printf("\n");
 }
