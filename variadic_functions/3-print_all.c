@@ -11,13 +11,10 @@ int i, counter;
 char c;
 float f;
 char *s;
+char *separator = ", ";
 va_list ap;
 va_start(ap, format);
-if (!format)
-{
-printf("\n");
-return;
-}
+
 while (format[counter] != '\0')
 {
 	switch (format[counter])
@@ -39,11 +36,17 @@ while (format[counter] != '\0')
 		if (s == NULL)
 		{
 		printf("(nil)");
+		return;
 		}
-		printf("%s", s);
+		printf("%s, ", s);
 		break;
 	}
 ++counter;
+}
+if (!format || format[counter] == '\0')
+{
+printf("\n");
+return;
 }
 va_end(ap);
 printf("\n");
