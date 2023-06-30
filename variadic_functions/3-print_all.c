@@ -14,7 +14,7 @@ char *s;
 va_list ap;
 va_start(ap, format);
 
-while (*format != '\0')
+while (*format)
 {
 	switch (*format)
 	{
@@ -41,4 +41,5 @@ while (*format != '\0')
 	}
 }
 va_end(ap);
+printf("\n");
 }
