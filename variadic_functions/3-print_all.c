@@ -21,13 +21,13 @@ void print_int(va_list ap)
  */
 void print_float(va_list ap)
 {
-	printf("%d", va_arg(ap, double));
+	printf("%f", va_arg(ap, double));
 }
 /**
  * print_string - prints string
  * @ap: format arg
  */
-void print_string(va_kist ap)
+void print_string(va_list ap)
 {
 	char *s = va_arg(ap, char *);
 	if (!s)
@@ -50,8 +50,7 @@ char *separator = "";
 va_list ap;
 va_start(ap, format);
 
-print_f elems[] 
-{
+print_f elems[] = {
 	{"c", print_char},
 	{"i", print_int},
 	{"f", print_float},
