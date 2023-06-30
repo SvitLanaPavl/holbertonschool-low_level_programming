@@ -61,7 +61,7 @@ while (format[i] && format)
 {
 while (elems[j].type)
 {
-	if (elems[j].type == format[i])
+	if (*elems[j].type == format[i])
 	{
 	printf("%s", separator);
 	elems[j].f(ap);
