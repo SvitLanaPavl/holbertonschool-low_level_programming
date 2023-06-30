@@ -14,23 +14,25 @@ char *s;
 va_list ap;
 va_start(ap, format);
 if (!format)
+{
+printf("\n");
 return;
-
+}
 while (format[counter] != '\0')
 {
 	switch (format[counter])
 	{
 	case 'c':
 		c = va_arg(ap, int);
-		printf("%c", c);
+		printf("%c, ", c);
 		break;
 	case 'f':
 		f = va_arg(ap, double);
-		printf("%f", f);
+		printf("%f, ", f);
 		break;
 	case 'i':
 		i = va_arg(ap, int);
-		printf("%d", i);
+		printf("%d, ", i);
 		break;
 	case 's':
 		s = va_arg(ap, char *);
@@ -38,7 +40,7 @@ while (format[counter] != '\0')
 		{
 		printf("(nil)");
 		}
-		printf("%s", s);
+		printf("%s, ", s);
 		break;
 	}
 ++counter;
