@@ -1,5 +1,43 @@
 #include "variadic_functions.h"
 /**
+ * print_char - prints character
+ * @ap: format arg
+ */
+void print_char(va_list ap)
+{
+	printf("%c", va_arg(ap, int));
+}
+/**
+ * print_int - prints integer
+ * @ap: format arg
+ */
+void print_int(va_list ap)
+{
+	printf("%d", va_arg(ap, int));
+}
+/**
+ * print_float - prints float
+ * @ap: format arg
+ */
+void print_float(va_list ap)
+{
+	printf("%d", va_arg(ap, double));
+}
+/**
+ * print_string - prints string
+ * @ap: format arg
+ */
+void print_string(va_kist ap)
+{
+	char *s = va_arg(ap, char *);
+	if (!s)
+	{
+	printf("(nil)");
+	return;
+	}
+	printf("%s", s);
+}
+/**
  * print_all - prints anything
  * Description: prints anything
  * @format: list of types of arguments passed to the function
@@ -7,46 +45,34 @@
  */
 void print_all(const char * const format, ...)
 {
-int i, counter;
-char c;
-float f;
-char *s;
-char *separator = ", ";
+int i = 0, j = 0;
+char *separator = "";
 va_list ap;
 va_start(ap, format);
-if (!format)
+
+print_f elems[] 
 {
-printf("\n");
-return;
+	{"c", print_char},
+	{"i", print_int},
+	{"f", print_float},
+	{"s", print_string},
+	{NULL, NULL}
 }
-while (format[counter] != '\0')
+while (format[i] && format)
 {
-	switch (format[counter])
+while (elems[j].type)
+{
+	if (elems[j].type == format[i])
 	{
-	case 'c':
-		c = va_arg(ap, int);
-		printf("%c%s", c, separator);
-		break;
-	case 'f':
-		f = va_arg(ap, double);
-		printf("%f%s", f, separator);
-		break;
-	case 'i':
-		i = va_arg(ap, int);
-		printf("%d%s", i, separator);
-		break;
-	case 's':
-		s = va_arg(ap, char *);
-		if (s == NULL)
-		{
-		printf("(nil)");
-		return;
-		}
-		printf("%s%s", s, separator);
-		break;
+	printf("%s", separator);
+	elems[j].f(ap);
+	separator = ", ";
 	}
-++counter;
+++j;
 }
+j = 0;
+++i;
+}	
 va_end(ap);
 printf("\n");
 }
