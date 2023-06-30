@@ -73,6 +73,7 @@ while (elems[j].type)
 j = 0;
 ++i;
 }
+return;
 va_end(ap);
 printf("\n");
 }
