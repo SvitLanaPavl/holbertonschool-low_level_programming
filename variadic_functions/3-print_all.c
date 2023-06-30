@@ -35,7 +35,7 @@ flag = 0;
 break;
     }
 if (format[i + 1] && flag)
-	print(", ";
+	printf(", ";
 i++;
 }
 va_end(ap);
