@@ -4,14 +4,15 @@
  * @format: format arg
  * Return: void
  */
-void print_all(const char * const format, ...) {
+void print_all(const char * const format, ...)
+{
 unsigned int flag, i = 0;
 char *string;
 va_list ap;
 
 while (format)
 {
-	va_start(ap, format);
+va_start(ap, format);
 while (format[i]) {
 flag = 1;
 switch (format[i]) {
@@ -33,7 +34,7 @@ break;
 default:
 flag = 0;
 break;
-    }
+}
 if (format[i + 1] && flag)
 	printf(", ");
 i++;
