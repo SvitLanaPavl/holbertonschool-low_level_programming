@@ -45,11 +45,6 @@ void print_string(va_list ap)
  */
 void print_all(const char * const format, ...)
 {
-int i = 0, j = 0;
-char *separator = "";
-va_list ap;
-va_start(ap, format);
-
 print_f elems[] = {
 	{"c", print_char},
 	{"i", print_int},
@@ -57,6 +52,11 @@ print_f elems[] = {
 	{"s", print_string},
 	{NULL, NULL}
 };
+int i = 0, j = 0;
+char *separator = "";
+va_list ap;
+va_start(ap, format);
+
 while (format[i] && format)
 {
 while (elems[j].type)
