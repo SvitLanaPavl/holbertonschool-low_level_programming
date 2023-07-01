@@ -1,15 +1,24 @@
+; ----------------------------------------------------------------------
+; 100-hello_world.asm
+;
+; This is the program that writes "Hello, World"
+; ----------------------------------------------------------------------
+
 global _start
+
 section .text
-_start:
-mov rax, 1 ; write(
-mov rdi, 1 ; STDOUT_FILENO,
-mov rsi, msg ; "Hello, world!\n")
-syscall ; );
+	global main
+main:
+	mov eax, 0x4
+	mov ebx, 0x1
+	mov ecx, msg
+	mov edx, msglen
+	int 0x80
 
-mov rax, 60 ; exit(
-mov rdi, 0 : EXIT_SUCCESS
-syscall ; );
+	mov eax, 0x1
+	mov ebx, 0x2
+	int 0x80
 
-section .rodata
-msg: db "Hello, world!", 10
-msglen: equ $ - msg
+section .data
+	msg: db "Hello, World", 0xA
+	msglen equ $ -msg
