@@ -14,6 +14,8 @@ main:
 	mov ecx, msg
 	mov edx, msglen
 	int 0x80
+	
+	mov eax, 0
 
 	mov eax, 0x1
 	mov ebx, 0x2
