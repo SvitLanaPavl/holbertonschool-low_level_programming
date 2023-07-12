@@ -8,7 +8,7 @@
 size_t print_list(const list_t *h)
 {
 const list_t *temp = h;
-int count;
+int count = 0;
 
 if (!temp->str)
 printf("[0] (nul)\n");
@@ -19,5 +19,5 @@ printf("[%d] %s/n", count, temp->str);
 temp = temp->next;
 count++;
 }
-return (count); 
+return (count);
 }
