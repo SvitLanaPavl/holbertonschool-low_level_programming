@@ -26,10 +26,13 @@ newNode->next = NULL;
 if (!*head)
 *head = newNode;
 
+else
+{
 while (temp->next)
 temp = temp->next;
 
 temp->next = newNode;
+}
 free(temp);
 return (newNode);
 }
