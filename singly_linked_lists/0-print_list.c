@@ -13,9 +13,9 @@ int count;
 if (!temp->str)
 printf("[0] (nul)\n");
 
-while (temp)
+while (temp && temp->str[count])
 {
-printf("[%d] %s", count, temp->str);
+printf("[%d] %s/n", count, temp->str);
 temp = temp->next;
 count++;
 }
