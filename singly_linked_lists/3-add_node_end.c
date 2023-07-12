@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_node - adds a node at the beginning of a list
+ * add_node_end - adds a node at the beginning of a list
  * Description: adds a node at the beginning of the list
  * @head: pointer to head
  * @str: string pointer
@@ -8,14 +8,12 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-list_t *newNode = malloc(sizeof(list_t));
-list_t *current;
+list_t *newNode;
 
-if (!newNode)
-{
+if (!head)
 return (NULL);
-}
 
+newNode = malloc(sizeof(list_t));
 newNode->str = strdup(str);
 if (!newNode->str)
 {
@@ -24,9 +22,10 @@ if (!newNode->str)
 }
 newNode->len = strlen(str);
 newNode->next = NULL;
-current = *head;
 
-if (!current)
-*head = newNode;
+while (head->next)
+head = head->next;
+
+head->next = newNode;
 return (newNode);
 }
