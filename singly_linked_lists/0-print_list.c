@@ -13,11 +13,17 @@ int count = 0;
 if (!temp->str)
 printf("[0] (nul)\n");
 
-while (temp && temp->str[count])
+while (temp)
 {
-printf("[%d] %s/n", count, temp->str);
-temp = temp->next;
+if (!temp->str)
+printf("[0] (nul)\n");
+
+while (temp->str[count])
+{
 count++;
+}
+printf("[%d] %s\n", count, temp->str);
+temp = temp->next;
 }
 return (count);
 }
