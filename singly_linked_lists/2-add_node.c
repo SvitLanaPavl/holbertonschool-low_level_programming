@@ -12,7 +12,7 @@ list_t *newNode = malloc(sizeof(list_t));
 if (!newNode)
 return (NULL);
 
-newNode->str = (char *)strdup(const char *str);
+newNode->str = strdup(const char *str);
 if (!newNode->str)
 {
 	free(newNode);
