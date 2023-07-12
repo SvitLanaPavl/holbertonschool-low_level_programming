@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * print_list - prints all the elements of the structure
  * Description: prints all the elements of the structure
