@@ -15,6 +15,10 @@ if (!h->str)
 {
 printf("[0] (nil)\n");
 }
+else if (!h->str[0])
+{
+continue;
+}
 printf("[%d] %s\n", h->len, h->str);
 count++;
 h = h->next;
