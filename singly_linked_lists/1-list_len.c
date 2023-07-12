@@ -13,7 +13,7 @@ const list_t *temp = h;
 while (temp)
 {
 count++;
-temp->next;
+temp = temp->next;
 }
 return (count);
 }
