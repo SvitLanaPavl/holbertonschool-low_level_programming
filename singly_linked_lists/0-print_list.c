@@ -12,14 +12,11 @@ size_t count = 0;
 while (h)
 {
 if (!h->str)
-{
 printf("[0] (nil)\n");
-}
-else if (!h->str[0])
-{
-continue;
-}
+
+else
 printf("[%d] %s\n", h->len, h->str);
+
 count++;
 h = h->next;
 }
