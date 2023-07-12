@@ -11,7 +11,7 @@ size_t count = 0;
 
 while (h)
 {
-if (h->str == NULL)
+if (!h->str)
 {
 printf("[0] (nil)\n");
 }
