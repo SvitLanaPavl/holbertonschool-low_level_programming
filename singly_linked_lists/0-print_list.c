@@ -8,7 +8,7 @@
 size_t print_list(const list_t *h)
 {
 const list_t *temp = h;
-size_t count;
+int count;
 
 if (!temp->str)
 printf("[0] (nul)\n");
