@@ -18,8 +18,8 @@ if (!newNode->str)
 	free(newNode);
 	return (NULL);
 }
-Newnode->len = strlen(str);
+newNode->len = strlen(str);
 newNode->next = (*head);
 (*head) = newNode;
-return (&newNode);
+return (newNode);
 }
