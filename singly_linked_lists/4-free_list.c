@@ -13,8 +13,8 @@ list_t *foll;
 while (temp)
 {
 	foll = temp->next;
-	free(tmp);
-	tmp = foll;
+	free(temp);
+	temp = foll;
 }
 head = NULL;
 }
