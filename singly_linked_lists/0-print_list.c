@@ -12,7 +12,7 @@ int count = 0;
 
 while (temp)
 {
-if (!temp->str)
+if (!temp->str || !temp->str[0])
 {
 printf("[0] (nil)\n");
 count++;
