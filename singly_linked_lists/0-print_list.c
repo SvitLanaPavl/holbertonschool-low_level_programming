@@ -15,7 +15,7 @@ while (temp)
 if (!temp->str)
 {
 printf("[0] (nil)\n");
-return (count);
+count++;
 }
 printf("[%d] %s\n", temp->len, temp->str);
 temp = temp->next;
