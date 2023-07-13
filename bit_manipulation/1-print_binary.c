@@ -8,11 +8,13 @@
 void print_binary(unsigned long int n)
 {
 int i;
-char c;
 
-for (i = 63; i >= 0; i--)
+for (i = 31; i >= 0; i--)
 {
-c = (n >> i) & 1;
-printf("%c", c + '0');
+if (n & (n << i))
+printf("1");
+
+else
+printf("0");
 }
 }
