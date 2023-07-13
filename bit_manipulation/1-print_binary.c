@@ -7,19 +7,12 @@
  */
 void print_binary(unsigned long int n)
 {
-while (n && n != 1)
-{
-if (n & 1)
-printf("1");
+int i;
+char c;
 
-else
+for (i = 63; i >= 0; i--)
 {
-printf("0");
-n >>= 1;
+c = (n >> i) & 1;
+printf("%c", c + '0');
 }
-}
-if (n == 1)
-printf("1");
-
-printf("\n");
 }
