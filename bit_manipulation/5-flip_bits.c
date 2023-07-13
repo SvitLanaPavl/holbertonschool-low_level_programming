@@ -5,7 +5,7 @@
  * @n: number
  * Return: count
  */
-int count_bits (int n)
+int count_bits(int n)
 {
 int count = 0;
 
@@ -26,5 +26,6 @@ return (count);
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-return (count_bits(n ^ m));
+unsigned long int u = n ^ m;
+return (count_bits(u));
 }
