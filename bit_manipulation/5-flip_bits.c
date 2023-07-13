@@ -1,6 +1,23 @@
 #include "main.h"
 /**
- * flip_bit - flips bits
+ * count_bits - counts bits
+ * Description: counts bits
+ * @n: number
+ * Return: count
+ */
+int count_bits (int n)
+{
+int count = 0;
+
+while (n > 0)
+{
+	count++;
+	n &= (n - 1);
+}
+return (count);
+}
+/**
+ * flip_bits - flips bits
  * Description: flips bits
  * @n: one number
  * @m: another number
@@ -9,5 +26,5 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-return (n ^ (1 << (m - 1)));
+return (count_bits((n ^ m));
 }
