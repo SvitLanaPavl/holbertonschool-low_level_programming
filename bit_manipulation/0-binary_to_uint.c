@@ -17,6 +17,9 @@ return (0);
 
 while (b[i] == '0' || b[i] == '1')
 {
+if (b[i] != '0' && b[i] != '1')
+continue;
+
 value <<= 1;
 value += b[i] - '0';
 i++;
