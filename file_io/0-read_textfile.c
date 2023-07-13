@@ -11,13 +11,19 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 FILE *ptr = fopen(filename, "r");
-char buffer[letters];
-ssize_t bytes_read = fread(buffer, 1, letters, ptr);
-ssize_t bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
+char buffer[letters + 1];
+ssize_t bytes_read;
+ssize_t bytes_written;
 
 if (!filename || !ptr)
 return (0);
 
+bytes_read = fread(buffer, 1, letters, ptr);
+if (bytes_read < 0)
+return (0);
+
+buffer[bytes_read] = '\0';
+bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 if (bytes_written < bytes_read)
 return (0);
 
