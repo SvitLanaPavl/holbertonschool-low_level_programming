@@ -20,9 +20,12 @@ while (b[i] == '0' || b[i] == '1')
 if (b[i] != '0' && b[i] != '1')
 return (0);
 
+else
+{
 value <<= 1;
 value += b[i] - '0';
 i++;
+}
 }
 return (value);
 }
