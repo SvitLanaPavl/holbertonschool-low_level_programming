@@ -17,4 +17,8 @@ printf("1");
 else
 printf("0");
 }
+if (n == 0)
+{
+printf("0");
+}
 }
