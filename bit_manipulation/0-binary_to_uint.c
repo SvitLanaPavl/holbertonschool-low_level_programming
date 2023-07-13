@@ -9,26 +9,23 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
+unsigned int mul = 1;
 unsigned int value = 0;
-int i = 0;
+int t;
+unsigned int len;
 
-if (b == NULL)
+len = strlen(b);
+
+for (t = len-1; t >= 0; t--)
+{
+if (b[t] != '0' && b[t] != '1')
 return (0);
 
-while (*b)
+if (b[t] == '1')
 {
-while (b[i] == '0' || b[i] == '1')
-{
-if (b[i] != '0' || b[i] != '1')
-{
-break;
-return (0);
+value += mul;
 }
-
-value <<= 1;
-value += b[i] - '0';
-i++;
-}
+mul *= 2;
 }
 return (value);
 }
