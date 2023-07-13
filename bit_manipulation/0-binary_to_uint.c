@@ -14,9 +14,12 @@ unsigned int value = 0;
 int t;
 unsigned int len;
 
+if (b == NULL)
+return (0);
+
 len = strlen(b);
 
-for (t = len-1; t >= 0; t--)
+for (t = len - 1; t >= 0; t--)
 {
 if (b[t] != '0' && b[t] != '1')
 return (0);
