@@ -13,8 +13,8 @@ unsigned long int u = n ^ m, count = 0;
 
 while (u > 0)
 {
-        count += (u & 1);
-        u >>= 1;
+	count += (u & 1);
+	u >>= 1;
 }
 return (count);
 }
