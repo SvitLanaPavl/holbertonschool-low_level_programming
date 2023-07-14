@@ -16,9 +16,11 @@ if (!text_content)
 text_content = "";
 
 file_ptr = fopen(filename, "w");
+if (!file_ptr)
+return (-1);
 
 bytes_written = fwrite(text_content, 1, strlen(text_content), file_ptr);
-if (bytes_written == 0)
+if (!bytes_writteni)
 return (-1);
 
 fclose(file_ptr);
