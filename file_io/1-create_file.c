@@ -9,18 +9,18 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-FILE *file_ptr;
+int file_descr;
 
 if (!text_content)
 text_content = "";
 
-file_ptr = fopen(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-if (!file_ptr)
+file_descr = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+if (!file_descr)
 return (-1);
 
 if (text_content)
-fwrite(text_content, 1, strlen(text_content), file_ptr);
+write(file_descr, text_content, strlen(text_content));
 
-fclose(file_ptr);
+close(file_descr);
 return (1);
 }
