@@ -14,17 +14,15 @@ int bytes;
 if (!filename)
 return (-1);
 
-if (!text_content)
-{
-if (access(filename, F_OK))
-return (-1);
-
-return (1);
-}
-
-file_descr = open(filename, O_APPEND);
+file_descr = open(filename, O_RDWR O_APPEND);
 if (file_descr < 0)
 return (-1);
+
+if (!text_content)
+{
+close(file_descr);
+return (1);
+}
 
 bytes = write(file_descr, text_content, strlen(text_content));
 if (bytes < 0)
