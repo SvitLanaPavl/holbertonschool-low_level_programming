@@ -16,11 +16,9 @@ return (-1);
 
 if (!text_content)
 {
-file_descr = open(filename, O_RDONLY);
-if (file_descr < 1)
+if (access(filename, F_OK))
 return (-1);
 
-close(file_descr);
 return (1);
 }
 
@@ -31,7 +29,7 @@ return (-1);
 bytes = write(file_descr, text_content, strlen(text_content));
 if (bytes < 0)
 {
-close (file_descr);
+close(file_descr);
 return (-1);
 }
 
