@@ -20,7 +20,7 @@ if (!file_ptr)
 return (-1);
 
 bytes_written = fwrite(text_content, 1, strlen(text_content), file_ptr);
-if (!bytes_writteni)
+if (!bytes_written)
 return (-1);
 
 fclose(file_ptr);
