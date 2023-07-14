@@ -18,7 +18,7 @@ return (-1);
 if (!text_content)
 text_content = "";
 
-file_ptr = fopen(filename, S_IRUSR | S_IWUSR);
+file_ptr = fopen(filename, "w");
 
 if (!file_ptr)
 return (-1);
