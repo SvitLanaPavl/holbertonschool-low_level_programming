@@ -14,7 +14,7 @@ int bytes;
 if (!filename)
 return (-1);
 
-file_descr = open(filename, O_RDWR O_APPEND);
+file_descr = open(filename, O_RDWR | O_APPEND);
 if (file_descr < 0)
 return (-1);
 
