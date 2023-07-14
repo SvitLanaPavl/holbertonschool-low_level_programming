@@ -14,7 +14,7 @@ FILE *file_ptr;
 if (!text_content)
 text_content = "";
 
-file_ptr = fopen(filename, O_CREAT | O_RDWR | O_TRUNC | 0600);
+file_ptr = fopen(*filename, O_CREAT | O_RDWR | O_TRUNC | 0600);
 if (!file_ptr)
 return (-1);
 
