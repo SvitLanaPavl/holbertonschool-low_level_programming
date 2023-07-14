@@ -10,7 +10,6 @@
 int create_file(const char *filename, char *text_content)
 {
 FILE *file_ptr;
-size_t bytes_written;
 
 if (!text_content)
 text_content = "";
