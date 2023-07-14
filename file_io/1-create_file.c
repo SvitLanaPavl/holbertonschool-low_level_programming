@@ -15,7 +15,7 @@ if (!text_content)
 text_content = "";
 
 file_descr = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-if (!file_descr)
+if (file_descr < 0)
 return (-1);
 
 if (text_content)
