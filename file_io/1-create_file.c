@@ -20,7 +20,7 @@ if (!file_ptr)
 return (-1);
 
 if (!text_content)
-file_ptr = fputs("", char *text_content);
+file_ptr = fputs("", strlen(text_content), text_content);
 
 fclose(file_ptr);
 return (1);
