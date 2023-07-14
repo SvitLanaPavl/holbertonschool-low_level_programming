@@ -27,6 +27,8 @@ bytes_written = fwrite(text_content, 1, strlen(text_content), file_ptr);
 if (bytes_written == 0)
 return (-1);
 
+chmod(filename, S_IRUSR | S_IWUSR);
+
 fclose(file_ptr);
 return (1);
 }
