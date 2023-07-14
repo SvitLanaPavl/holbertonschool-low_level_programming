@@ -16,11 +16,11 @@ return (-1);
 
 file_ptr = fopen(filename, "rw");
 
-if (!file_ptr || !file_ptr = fopen(filename, "rw"))
+if (!file_ptr)
 return (-1);
 
-if (!text_context)
-file_ptr = fputs("", text_content);
+if (!text_content)
+file_ptr = fputs("", char *text_content);
 
 fclose(file_ptr);
 return (1);
