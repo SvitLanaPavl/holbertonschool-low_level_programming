@@ -10,17 +10,22 @@
 int create_file(const char *filename, char *text_content)
 {
 FILE *file_ptr;
+size_t bytes_written;
 
 if (!filename)
 return (-1);
 
-file_ptr = fopen(filename, "rw");
+if (!text_content)
+text_content = "";
+
+file_ptr = fopen(filename, "w");
 
 if (!file_ptr)
 return (-1);
 
-if (!text_content)
-file_ptr = fputs("", strlen(text_content), text_content);
+bytes_written = fwrite(text_content, 1, strlen(text_content), file_ptr);
+if (bytes_written == 0)
+return (-1);
 
 fclose(file_ptr);
 return (1);
