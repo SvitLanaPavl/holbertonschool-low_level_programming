@@ -14,13 +14,13 @@ FILE *file_ptr;
 if (!text_content)
 text_content = "";
 
-file_ptr = open(filename, O_CREAT | O_RDWR | O_TRUNC | 0600);
+file_ptr = fopen(filename, O_CREAT | O_RDWR | O_TRUNC | 0600);
 if (!file_ptr)
 return (-1);
 
 if (text_content)
-write(text_content, 1, strlen(text_content), file_ptr);
+fwrite(text_content, 1, strlen(text_content), file_ptr);
 
-close(file_ptr);
+fclose(file_ptr);
 return (1);
 }
